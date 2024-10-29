@@ -1,7 +1,7 @@
 from ctypes import c_uint32, c_void_p, string_at
 
-from rotypes.idldsl import define_winrt_com_method, GUID
-from rotypes.inspectable import IInspectable, IUnknown
+from capture.rotypes.idldsl import define_winrt_com_method, GUID
+from capture.rotypes.inspectable import IInspectable, IUnknown
 
 
 @GUID('905a0fef-bc53-11df-8c49-001e4fc686da')

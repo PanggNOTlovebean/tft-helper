@@ -1,10 +1,10 @@
 import asyncio
 from ctypes import Structure, c_float, HRESULT, c_int, windll, c_uint32, c_int32, WinError
 
-from rotypes import delegate, HSTRING
-from rotypes.idldsl import define_winrt_com_method, generics_cache, define_winrt_com_delegate, pinterface_type, \
+from capture.rotypes import delegate, HSTRING
+from capture.rotypes.idldsl import define_winrt_com_method, generics_cache, define_winrt_com_delegate, pinterface_type, \
     GUID
-from rotypes.inspectable import IInspectable, IUnknown
+from capture.rotypes.inspectable import IInspectable, IUnknown
 
 _kernel32 = windll.LoadLibrary('kernel32.dll')
 _CreateEvent = _kernel32.CreateEventW

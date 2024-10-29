@@ -1,9 +1,5 @@
 from dataclasses import dataclass
 import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(1, str(Path(__file__).parent.parent))
 
 from PySide6.QtWidgets import (
     QWidget,
@@ -20,8 +16,8 @@ from PySide6.QtWidgets import (
 )
 from PySide6.QtCore import Qt, QAbstractListModel, QModelIndex
 from PySide6.QtGui import QMouseEvent, QColor
-from utils.signal import signal_bus
-from utils.logger import log
+from common.signal import signal_bus
+from common.logger import log
 
 level_severity = {
     "DEBUG": 10,

@@ -1,13 +1,13 @@
 from ctypes import c_uint32, c_bool, c_double
 
-from rotypes.Windows.Foundation import IReference, Rect, IAsyncOperation
-from rotypes.Windows.Foundation.Collections import IVectorView
-from rotypes.Windows.Globalization import Language
-from rotypes.Windows.Graphics.Imaging import SoftwareBitmap
-from rotypes.idldsl import define_winrt_com_method, _static_propget, _static_method, _non_activatable_init, \
+from capture.rotypes.Windows.Foundation import IReference, Rect, IAsyncOperation
+from capture.rotypes.Windows.Foundation.Collections import IVectorView
+from capture.rotypes.Windows.Globalization import Language
+from capture.rotypes.Windows.Graphics.Imaging import SoftwareBitmap
+from capture.rotypes.idldsl import define_winrt_com_method, _static_propget, _static_method, _non_activatable_init, \
     runtimeclass, GUID
-from rotypes.inspectable import IInspectable
-from rotypes.winstring import HSTRING
+from capture.rotypes.inspectable import IInspectable
+from capture.rotypes.winstring import HSTRING
 
 
 @GUID('3C2A477A-5CD9-3525-BA2A-23D1E0A68A1D')

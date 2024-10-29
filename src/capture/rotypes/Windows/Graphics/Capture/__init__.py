@@ -1,14 +1,14 @@
 from ctypes import c_bool, c_int32, c_int64
 from ctypes.wintypes import HWND, HMONITOR
 
-from rotypes.Windows.Foundation import IClosable, TypedEventHandler
-from rotypes.Windows.Graphics import SizeInt32
-from rotypes.Windows.Graphics.DirectX import DirectXPixelFormat
-from rotypes.idldsl import define_winrt_com_method, runtimeclass, GUID, \
+from capture.rotypes.Windows.Foundation import IClosable, TypedEventHandler
+from capture.rotypes.Windows.Graphics import SizeInt32
+from capture.rotypes.Windows.Graphics.DirectX import DirectXPixelFormat
+from capture.rotypes.idldsl import define_winrt_com_method, runtimeclass, GUID, \
     runtimeclass_add_statics
-from rotypes.inspectable import IInspectable, IUnknown
-from rotypes.types import REFGUID
-from rotypes.winstring import HSTRING
+from capture.rotypes.inspectable import IInspectable, IUnknown
+from capture.rotypes.types import REFGUID
+from capture.rotypes.winstring import HSTRING
 
 
 @GUID('FA50C623-38DA-4B32-ACF3-FA9734AD800E')

@@ -3,8 +3,8 @@ from functools import lru_cache
 
 from _ctypes import POINTER
 
-from rotypes.idldsl import define_winrt_com_method, pinterface_type
-from rotypes.inspectable import IInspectable
+from capture.rotypes.idldsl import define_winrt_com_method, pinterface_type
+from capture.rotypes.inspectable import IInspectable
 
 
 class IIterator_helpers:

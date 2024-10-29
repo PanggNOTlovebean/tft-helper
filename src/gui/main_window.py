@@ -1,16 +1,10 @@
-from dataclasses import dataclass
 import sys
-from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).parent))
-sys.path.insert(1, str(Path(__file__).parent.parent))
-from PySide6.QtCore import Qt, QTranslator
 from task.base_task import BaseTask
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QApplication
 from qfluentwidgets import (
     SplitFluentWindow,
-    FluentWindow,
     FluentIcon,
     FluentTranslator,
     Theme,
@@ -48,11 +42,8 @@ if __name__ == "__main__":
 
     translator = FluentTranslator()
     app.installTranslator(translator)
-    task_list = [
-        HexTask(name="任务1", description="这是一个任务1"),
-        HexTask(name="任务2", description="这是一个任务2"),
-        HexTask(name="任务3", description="这是一个任务3"),
-    ]
+    task_list = [HexTask() for _ in range(3)]
+      
     window = MainWindow(task_list)
     window.show()
     sys.exit(app.exec())

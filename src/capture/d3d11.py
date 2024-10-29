@@ -1,7 +1,7 @@
 import ctypes.wintypes
 
-from rotypes import IUnknown
-from rotypes import idldsl
+from capture.rotypes import IUnknown
+from capture.rotypes import idldsl
 
 D3D11_SDK_VERSION = 7
 D3D_DRIVER_TYPE_HARDWARE = 1

@@ -1,11 +1,5 @@
-import sys
-from pathlib import Path
 import threading
 import time
-
-sys.path.append(str(Path(__file__).parent))
-sys.path.append(str(Path(__file__).parent.parent))
-sys.path.append(str(Path(__file__).parent.parent.parent))
 
 from win32 import win32gui
 from common.logger import log
@@ -29,7 +23,7 @@ class HwndWindow(metaclass=SingletonMeta):
             time.sleep(1)
 
     @property
-    def is_open(self):
+    def is_open(self) -> bool:
         return (
             self.hwnd is not None
             and win32gui.IsWindowVisible(self.hwnd)

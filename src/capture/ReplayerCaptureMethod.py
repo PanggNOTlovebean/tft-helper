@@ -1,6 +1,6 @@
-from ..__version__ import REPLAY_BASE_TIME, APP_START_TIME
-from ..capture.BaseWindowsCaptureMethod import BaseWindowsCaptureMethod
-from ..capture.hwnd_window import HwndWindow
+from __version__ import REPLAY_BASE_TIME, APP_START_TIME
+from capture.BaseWindowsCaptureMethod import BaseWindowsCaptureMethod
+from capture.hwnd_window import HwndWindow
 from pathlib import Path
 import cv2
 import time
@@ -27,8 +27,12 @@ class ReplayerCaptureMethod(BaseWindowsCaptureMethod):
         
         # 获取文件夹列表
         self.screenshot_list = self.screenshot_path.glob("*.png")
-        self.next_frame_name = next(self.screenshot_list)
-        self.next_frame_time = int(self.next_frame_name)
+        try:
+            self.next_frame_name = next(self.screenshot_list)
+            self.next_frame_time = int(self.next_frame_name.stem)
+        except StopIteration:
+            self.next_frame_name = None
+            
 
     def do_get_frame(self):
         current_time = time.time()
@@ -42,7 +46,9 @@ class ReplayerCaptureMethod(BaseWindowsCaptureMethod):
         self.last_frame_time = self.next_frame_time
         self.last_frame = cv2.imread(str(self.last_frame_name))
 
-        self.next_frame_name = next(self.screenshot_list)
+        try:
+            self.next_frame_name = next(self.screenshot_list)
+        except StopIteration:
+            self.next_frame_name = None
         self.next_frame_time = int(self.next_frame_name.stem)
-
         return self.last_frame

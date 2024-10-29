@@ -1,6 +1,6 @@
-from rotypes.idldsl import define_winrt_com_method, runtimeclass, _static_method, GUID
-from rotypes.inspectable import IInspectable
-from rotypes.winstring import HSTRING
+from capture.rotypes.idldsl import define_winrt_com_method, runtimeclass, _static_method, GUID
+from capture.rotypes.inspectable import IInspectable
+from capture.rotypes.winstring import HSTRING
 
 
 @GUID('EA79A752-F7C2-4265-B1BD-C4DEC4E4F080')

@@ -1,4 +1,4 @@
-from rotypes.idldsl import CtypesEnum
+from capture.rotypes.idldsl import CtypesEnum
 
 
 class DirectXAlphaMode(CtypesEnum):

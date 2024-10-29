@@ -1,9 +1,9 @@
 from ctypes import c_int, c_int32
 
 import rotypes.Windows.Storage.Streams
-from rotypes.Windows.Foundation import IClosable
-from rotypes.idldsl import define_winrt_com_method, _static_method, runtimeclass, GUID
-from rotypes.inspectable import IInspectable
+from capture.rotypes.Windows.Foundation import IClosable
+from capture.rotypes.idldsl import define_winrt_com_method, _static_method, runtimeclass, GUID
+from capture.rotypes.inspectable import IInspectable
 
 
 @GUID('689e0708-7eef-483f-963f-da938818e073')

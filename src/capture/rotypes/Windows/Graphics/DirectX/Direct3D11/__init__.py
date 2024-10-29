@@ -1,9 +1,9 @@
 import ctypes
 
-import rotypes as rotypes
-import rotypes.Windows.Foundation
-import rotypes.idldsl
-from rotypes.types import REFGUID
+import capture.rotypes as rotypes
+import capture.rotypes.Windows.Foundation
+import capture.rotypes.idldsl
+from capture.rotypes.types import REFGUID
 
 
 @rotypes.idldsl.GUID('A37624AB-8D5F-4650-9D3E-9EAE3D9BC670')
