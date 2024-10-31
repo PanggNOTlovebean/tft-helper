@@ -25,16 +25,15 @@ class BaseCaptureMethod(metaclass=SingletonMeta):
     def height(self):
         return self._size[1]
 
-    def get_frame(self) -> np.ndarray | None:
-        try:
-            frame = self.do_get_frame()
-            if frame is not None:
-                self._size = (frame.shape[1], frame.shape[0])
-                if frame.shape[2] == 4:
-                    frame = frame[:, :, :3]
-            return frame
-        except Exception as e:
-            raise CaptureException(str(e)) from e
+    def get_frame(self) -> np.ndarray:
+        frame = self.do_get_frame()
+        if frame is not None:
+            self._size = (frame.shape[1], frame.shape[0])
+            if frame.shape[2] == 4:
+                frame = frame[:, :, :3]
+                return frame
+        else:
+            raise CaptureException("获取帧失败")
 
     def __str__(self):
         return f'{self.__class__.__name__}_{self.width}x{self.height}'

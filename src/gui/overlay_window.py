@@ -1,155 +1,143 @@
+from PySide6.QtWidgets import QWidget, QApplication
+from PySide6.QtCore import Qt, QPoint, QRect, QTimer
+from PySide6.QtGui import QPainter, QPen, QColor, QFont, QImage
+import time
+from dataclasses import dataclass
+from typing import Any, Optional
+from dataclasses import dataclass, field
+import numpy as np
+import cv2
 import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).parent))
-sys.path.append(str(Path(__file__).parent.parent))
-print(str(Path(__file__)))
-print(str(Path(__file__).parent))
+from common.meta_class import SingletonMeta
+from common.ocr import RelatetiveBoxPosition
 
-from loguru import logger as log
-import win32api
-from PySide6.QtCore import Qt, QPoint, QTimer, QRect
-from PySide6.QtGui import QPainter, QColor, QPen, QFont, QGuiApplication, QPixmap
-from PySide6.QtWidgets import QWidget
-from capture.HwndWindow import HwndWindow
-from PySide6.QtWidgets import QApplication
+@dataclass
+class DrawItem:
+    """绘制项基类"""
+    duration: Optional[float] = None  # 持续时间（秒），None表示永久
+    create_time: float = field(default_factory=time.time)  # 创建时间
+    @property
+    def is_expired(self) -> bool:
+        """判断是否已过期"""
+        if self.duration is None:
+            return False
+        return time.time() - self.create_time > self.duration
 
+@dataclass
+class BoxTextItem(DrawItem):
+    """矩形框和文字"""
+    position: RelatetiveBoxPosition = field(default_factory=RelatetiveBoxPosition)
+    text: str = field(default="")
+    color: QColor = field(default_factory=lambda: QColor(255, 0, 0))
 
-
-class FrameWidget(QWidget):
-    def __init__(self):
-        super(FrameWidget, self).__init__()
-        self._mouse_position = QPoint(0, 0)
-        self.setMouseTracking(True)
-        # Start a timer to update mouse position using Windows API
-        self.timer = QTimer(self)
-        self.timer.timeout.connect(self.update_mouse_position)
-        self.timer.start(1000)  # Update every 50 milliseconds
-        self.mouse_font = QFont()
-        self.mouse_font.setPointSize(10)  # Adjust the size as needed
-        screen = QGuiApplication.primaryScreen()
-        self.scaling = screen.devicePixelRatio()
-
-        self.images = [
-            QPixmap("data/item/TFT_Item_Bloodthirster.jpg"),
-            QPixmap("data/item/TFT_Item_GargoyleStoneplate.jpg"),
-            QPixmap("data/item/TFT_Item_GuinsoosRageblade.jpg"),
-        ]
-
-    def update_mouse_position(self):
-        try:
-            if not self.isVisible():
-                return
-            x, y = win32api.GetCursorPos()
-            relative = self.mapFromGlobal(QPoint(x / self.scaling, y / self.scaling))
-            if self._mouse_position != relative and relative.x() > 0 and relative.y() > 0:
-                self._mouse_position = relative
-            self.update()
-        except Exception as e:
-            log.warning(f'GetCursorPos exception {e}')
-
-    def frame_ratio(self):
-        # if ok.gui.device_manager.width == 0:
-        #     return 1
-        # return self.width() / ok.gui.device_manager.width
-        return 1
-
-    def paintEvent(self, event):
-        if not self.isVisible():
-            return
-        painter = QPainter(self)
-        self.paint_border(painter)
-        self.paint_boxes(painter)
-        self.paint_mouse_position(painter)
-        self.paint_images(painter)
-
-    def paint_boxes(self, painter):
-        pen = QPen()  # Set the brush to red color
-        pen.setWidth(2)  # Set the width of the pen (border thickness)
-        painter.setPen(pen)  # Apply the pen to the painter
-        painter.setBrush(Qt.NoBrush)  # Ensure no fill
-
-        frame_ratio = self.frame_ratio()
-        # for key, value in ok.gui.ok.screenshot.ui_dict.items():
-        #     boxes = value[0]
-        #     pen.setColor(value[2])
-        #     painter.setPen(pen)
-        #     for box in boxes:
-        #         width = box.width * frame_ratio
-        #         height = box.height * frame_ratio
-        #         x = box.x * frame_ratio
-        #         y = box.y * frame_ratio
-        #         painter.drawRect(x, y, width, height)
-        #         painter.drawText(x, y + height + 12, f"{box.name or key}_{round(box.confidence * 100)}")
-
-    def paint_border(self, painter):
-        pen = QPen(QColor(255, 0, 0, 255))  # Solid red color for the border
-        pen.setWidth(1)  # Set the border width
-        painter.setPen(pen)
-        # Draw the border around the widget
-        painter.drawRect(0, 0, self.width() - 1, self.height() - 1)
-
-    def paint_mouse_position(self, painter):
-        x_percent = self._mouse_position.x() / self.width()
-        y_percent = self._mouse_position.y() / self.height()
-        x, y = self._mouse_position.x() * 2, self._mouse_position.y() * 2
-        text = f"({x}, {y}, {x_percent:.2f}, {y_percent:.2f})"
-        painter.setFont(self.mouse_font)
-
-        painter.setPen(QPen(QColor(255, 0, 0, 255), 1))
-        painter.drawText(20, 20, text)
-        #
-        # # Draw the black text
-        # painter.setPen(QPen(QColor(0, 0, 0), 2))
-        # painter.drawText(10, 10, text)
+@dataclass
+class ImageItem(DrawItem):
+    """图片项"""
+    x: int = field(default=0)
+    y: int = field(default=0)
+    image: Any = field(default=None)  # numpy.ndarray, QImage, or str
+    scale: float = field(default=1.0)
+    _qimage: Optional[QImage] = None
     
-    def paint_images(self, painter):
-        width = self.width() // 3  # 将宽度平均分成三份
-        height = self.height() // 2  # 高度设为窗口高度的一半
+    def __post_init__(self):
+        # 转换图片格式
+        if isinstance(self.image, np.ndarray):
+            if len(self.image.shape) == 3 and self.image.shape[2] == 3:
+                self.image = cv2.cvtColor(self.image, cv2.COLOR_BGR2RGB)
+            height, width = self.image.shape[:2]
+            bytes_per_line = 3 * width
+            self._qimage = QImage(self.image.data, width, height, 
+                                bytes_per_line, QImage.Format_RGB888)
+        elif isinstance(self.image, QImage):
+            self._qimage = self.image
+        elif isinstance(self.image, str):
+            self._qimage = QImage(self.image)
+        else:
+            raise ValueError("Unsupported image type")
 
-        for i, image in enumerate(self.images):
-            x = i * width
-            y = self.height() // 4  # 将图片垂直居中
-
-            # 缩放图片以适应分配的空间
-            scaled_image = image.scaled(width, height, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-            
-            # 计算图片在分配空间内的居中位置
-            image_rect = scaled_image.rect()
-            target_rect = QRect(x + (width - image_rect.width()) // 2,
-                                y + (height - image_rect.height()) // 2,
-                                image_rect.width(),
-                                image_rect.height())
-
-            painter.drawPixmap(target_rect, scaled_image)
-
-class OverlayWindow(FrameWidget):
+class OverlayWindow(QWidget):
+    
     def __init__(self):
         super().__init__()
-        # 设置透明背景，使得窗口的背景不会被绘制，从而可以显示下面的内容或窗口
-        self.setAttribute(Qt.WA_TranslucentBackground)
+        self.setWindowFlags(
+            Qt.WindowType.FramelessWindowHint |
+            Qt.WindowType.WindowStaysOnTopHint |
+            Qt.WindowType.Tool
+        )
+        self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
+        self.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents)
+        
+        screen = QApplication.primaryScreen().availableGeometry()
+        self.setGeometry(screen)
+        
+        # 使用坐标作为key
+        self.box_items : dict[RelatetiveBoxPosition, BoxTextItem] = {}  # key: (x1,y1,x2,y2), value: BoxTextItem
+        self.image_items = {} # key: (x,y), value: ImageItem
+        
+        self.font = QFont()
+        self.font.setPointSize(10)
+        
+        # 创建定时器用于清理过期项
+        self.cleanup_timer = QTimer(self)
+        self.cleanup_timer.timeout.connect(self.cleanup_expired_items)
+        self.cleanup_timer.start(100)  # 每100ms检查一次
+    
+    def cleanup_expired_items(self):
+        """清理所有过期的绘制项"""
+        need_update = False
+        
+        # 清理box_items
+        for pos in list(self.box_items.keys()):
+            if self.box_items[pos].is_expired:
+                del self.box_items[pos]
+                need_update = True
+        
+        # 清理image_items
+        for pos in list(self.image_items.keys()):
+            if self.image_items[pos].is_expired:
+                del self.image_items[pos]
+                need_update = True
+        
+        if need_update:
+            self.update()
+    
+    def add_box_item(self, item: BoxTextItem):
+        """添加单个绘制项"""
+        self.box_items[item.position] = item
+        self.update()
 
-        # 确保窗口能够正确接收鼠标事件，因为透明窗口可能会导致鼠标事件无法被正确处理
-        self.setAttribute(Qt.WA_OpaquePaintEvent)
-
-        # 设置窗口：
-        # Qt.FramelessWindowHint：去掉窗口的边框和标题栏，使其看起来更像一个浮动的工具窗口
-        # Qt.WindowStaysOnTopHint：使窗口始终保持在其他窗口之上
-        # Qt.Tool：将窗口标记为工具窗口，通常用于辅助工具
-        # Qt.WindowTransparentForInput：使窗口对输入事件透明，允许鼠标事件穿透窗口，直接传递给下面的窗口
-        self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Tool | Qt.WindowTransparentForInput)
-
-    def update_overlay(self, visible, x, y, window_width, window_height, width, height, scaling):
-        if visible:
-            self.setGeometry(x / scaling, y / scaling, width / scaling, height / scaling)
-        if visible and not self.isVisible():
-            self.show()
-            return
-        if not visible and self.isVisible():
-            self.hide()
-
-if __name__ == '__main__':
-    # 测试
-    app = QApplication(sys.argv)
-    window = OverlayWindow()
-    window.show()
-    sys.exit(app.exec())
+    
+    def paintEvent(self, event):
+        painter = QPainter(self)
+        painter.setRenderHint(QPainter.RenderHint.Antialiasing)
+        painter.setFont(self.font)
+        
+        # 绘制所有box_items
+        for pos, item in self.box_items.items():
+            pen = QPen(item.color)
+            pen.setWidth(3)
+            painter.setPen(pen)
+            x1, y1, x2, y2 = item.position.get_screen_position()
+            painter.drawRect(x1, y1, x2-x1, y2-y1)
+            
+            text_rect = painter.fontMetrics().boundingRect(item.text)
+            text_rect.moveTopLeft(QPoint(x2, y2+20))
+            text_rect.adjust(-10, -5, 10, 5)
+            
+            painter.fillRect(text_rect, QColor(0, 0, 0, 180))
+            painter.drawText(text_rect, Qt.AlignmentFlag.AlignCenter, item.text)
+        
+        # 绘制所有image_items
+        for pos, item in self.image_items.items():
+            if item.scale != 1.0:
+                scaled_width = int(item._qimage.width() * item.scale)
+                scaled_height = int(item._qimage.height() * item.scale)
+                scaled_image = item._qimage.scaled(
+                    scaled_width, scaled_height,
+                    Qt.AspectRatioMode.KeepAspectRatio,
+                    Qt.TransformationMode.SmoothTransformation
+                )
+            else:
+                scaled_image = item._qimage
+            
+            painter.drawImage(QPoint(item.x, item.y), scaled_image)

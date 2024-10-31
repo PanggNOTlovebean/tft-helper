@@ -4,7 +4,7 @@ from datetime import datetime
 APP_NAME = '云顶之弈助手'
 APP_VERSION = '1.0.0'
 LOL_PROCESS_NAME = 'League of Legends (TM) Client'
-DEBUG_MODE = False
+DEBUG_MODE = True
 REPLAY_MODE = False
 REPLAY_BASE_TIME = '2024-09-28 23-43-21'
 # 启动时间
