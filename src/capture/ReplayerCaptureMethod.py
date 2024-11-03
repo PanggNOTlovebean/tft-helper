@@ -1,9 +1,11 @@
-from __version__ import REPLAY_BASE_TIME, APP_START_TIME
+from __version__ import REPLAY_BASE_TIME, APP_START_TIME, REPALY_BASE_TIME_OFFSET
 from capture.BaseWindowsCaptureMethod import BaseWindowsCaptureMethod
 from capture.hwnd_window import HwndWindow
 from pathlib import Path
 import cv2
 import time
+from common.logger import log
+
 class ReplayerCaptureMethod(BaseWindowsCaptureMethod):
     name = "回放截图文件夹"
     description = "用于本地测试"
@@ -36,7 +38,7 @@ class ReplayerCaptureMethod(BaseWindowsCaptureMethod):
 
     def do_get_frame(self):
         current_time = time.time()
-        time_diff = current_time - APP_START_TIME
+        time_diff = current_time - APP_START_TIME + REPALY_BASE_TIME_OFFSET
 
         if time_diff < self.next_frame_time:
             return self.last_frame
@@ -47,8 +49,12 @@ class ReplayerCaptureMethod(BaseWindowsCaptureMethod):
         self.last_frame = cv2.imread(str(self.last_frame_name))
 
         try:
-            self.next_frame_name = next(self.screenshot_list)
+            while True:
+                self.next_frame_name = next(self.screenshot_list)
+                self.next_frame_time = int(self.next_frame_name.stem)
+                if self.next_frame_time > time_diff:
+                    break
         except StopIteration:
             self.next_frame_name = None
-        self.next_frame_time = int(self.next_frame_name.stem)
+        log.info(f"更新帧 {self.next_frame_name}")
         return self.last_frame

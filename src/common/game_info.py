@@ -1,5 +1,6 @@
 from time import time
 from common.logger import log
+from common.signal import signal_bus
 
 class GameStage:
     # 游戏阶段 1-1 2-1等
@@ -16,7 +17,8 @@ class GameStage:
             self.second_num = second_num
             self.last_update_time = time()
             log.info(f'更新游戏阶段为 {self}')
-            return True
+            if self in ('2-1', '3-2', '4-2'):
+                signal_bus.game_task_signal.emit(self)
         return False
 
     def clear(self):
@@ -29,5 +31,8 @@ class GameStage:
 
     def __str__(self):
         return f"{self.first_num}-{self.second_num}"
+
+    def __eq__(self, other):
+        return str(self) == str(other)
 
 game_stage = GameStage()

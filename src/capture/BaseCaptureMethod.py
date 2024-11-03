@@ -31,7 +31,7 @@ class BaseCaptureMethod(metaclass=SingletonMeta):
             self._size = (frame.shape[1], frame.shape[0])
             if frame.shape[2] == 4:
                 frame = frame[:, :, :3]
-                return frame
+            return frame
         else:
             raise CaptureException("获取帧失败")
 

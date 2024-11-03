@@ -14,7 +14,7 @@
 - [x] 悬浮窗口+日志窗口
 - [x] ocr识别
 - [x] 游戏阶段识别task
-- [ ] ocr显示debug信息
+- [x] ocr显示debug信息
 - [ ] 海克斯task + 强度提示
 - [ ] 英雄task + 装备推荐
 - [ ] 神器task + 强度提示

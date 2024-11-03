@@ -5,7 +5,7 @@ ocr = RapidOCR(det_use_cuda=True, cls_use_cuda=True, rec_use_cuda=True, min_heig
 
 
 class RelatetiveBoxPosition:
-    '''相对坐标'''
+    '''相对盒子坐标 包括左上角和右下角坐标'''
     def __init__(self, left_top_x: int, left_top_y: int, right_bottom_x: int, right_bottom_y: int):
         self._left_top_x = left_top_x
         self._left_top_y = left_top_y
@@ -31,4 +31,33 @@ class RelatetiveBoxPosition:
     def __eq__(self, other: object) -> bool:
         if isinstance(other, RelatetiveBoxPosition):
             return self._left_top_x == other._left_top_x and self._left_top_y == other._left_top_y and self._right_bottom_x == other._right_bottom_x and self._right_bottom_y == other._right_bottom_y
+        return False
+
+
+class RelativePosition:
+    '''相对位置坐标'''
+    def __init__(self, x: float, y: float):
+        self._x = x
+        self._y = y
+    
+    @property
+    def x(self) -> float:
+        '''获取x坐标'''
+        return self._x
+    
+    @property
+    def y(self) -> float:
+        '''获取y坐标'''
+        return self._y
+    
+    def get_screen_position(self) -> tuple[int, int]:
+        '''获取屏幕绝对坐标'''
+        return (int(self._x * MONITOR_W), int(self._y * MONITOR_H))
+    
+    def __hash__(self) -> int:
+        return hash((self._x, self._y))
+    
+    def __eq__(self, other: object) -> bool:
+        if isinstance(other, RelativePosition):
+            return self._x == other._x and self._y == other._y
         return False

@@ -9,7 +9,8 @@ import numpy as np
 import cv2
 import sys
 from common.meta_class import SingletonMeta
-from common.ocr import RelatetiveBoxPosition
+from common.ocr import RelatetiveBoxPosition, RelativePosition
+from PySide6.QtGui import QTextDocument
 
 @dataclass
 class DrawItem:
@@ -55,6 +56,22 @@ class ImageItem(DrawItem):
         else:
             raise ValueError("Unsupported image type")
 
+@dataclass
+class HtmlItem(DrawItem):
+    """HTML渲染项"""
+    position: RelativePosition = field(default_factory=RelativePosition)  # 替换x,y为RelativePosition
+    html: str = field(default="")
+    width: Optional[int] = field(default=None)
+    background_color: Optional[QColor] = field(default=None)
+    _document: Optional['QTextDocument'] = None
+
+    def __post_init__(self):
+        self._document = QTextDocument()
+        self._document.setDefaultFont(QFont("Arial", 10))
+        if self.width:
+            self._document.setTextWidth(self.width)
+        self._document.setHtml(self.html)
+
 class OverlayWindow(QWidget):
     
     def __init__(self):
@@ -73,6 +90,7 @@ class OverlayWindow(QWidget):
         # 使用坐标作为key
         self.box_items : dict[RelatetiveBoxPosition, BoxTextItem] = {}  # key: (x1,y1,x2,y2), value: BoxTextItem
         self.image_items = {} # key: (x,y), value: ImageItem
+        self.html_items = {}  # key: RelativePosition, value: HtmlItem
         
         self.font = QFont()
         self.font.setPointSize(10)
@@ -104,6 +122,16 @@ class OverlayWindow(QWidget):
     def add_box_item(self, item: BoxTextItem):
         """添加单个绘制项"""
         self.box_items[item.position] = item
+        self.update()
+
+    def add_image_item(self, item: ImageItem):
+        """添加图片项"""
+        self.image_items[item.position] = item
+        self.update()
+
+    def add_html_item(self, item: HtmlItem):
+        """添加HTML渲染项"""
+        self.html_items[item.position] = item
         self.update()
 
     
@@ -141,3 +169,21 @@ class OverlayWindow(QWidget):
                 scaled_image = item._qimage
             
             painter.drawImage(QPoint(item.x, item.y), scaled_image)
+        
+        # 绘制所有html_items
+        for pos, item in self.html_items.items():
+            painter.save()
+            
+            # 使用RelativePosition获取实际屏幕坐标
+            x, y = item.position.get_screen_position()
+            painter.translate(x, y)
+            
+            if item.background_color:
+                rect = QRect(0, 0, 
+                            item._document.size().width(), 
+                            item._document.size().height())
+                painter.fillRect(rect, item.background_color)
+            
+            item._document.drawContents(painter)
+            
+            painter.restore()

@@ -25,22 +25,25 @@ class BaseTask(ABC):
         else ReplayerCaptureMethod(hwnd)
     )
     ocr_line_model: RapidOCR = ocr
-    
+    _overlay_window = None  # 添加类级别的静态变量
     def __init__(self, config: TaskConfig = TaskConfig()):
         self.config = config
-        self.overlay_window = OverlayWindow()
-        self.overlay_window.show()  
+        if BaseTask._overlay_window is None:
+            BaseTask._overlay_window = OverlayWindow()
+            BaseTask._overlay_window.show()
+        self.overlay_window = BaseTask._overlay_window
 
-    @abstractmethod
     def run(self): ...
 
-    def can_run(self) -> bool:
+    def is_executable(self) -> bool:
         return self.hwnd.is_open
     
-    def ocr(self, frame: np.ndarray, position: RelatetiveBoxPosition, ocr_line = True) -> str:
+    def ocr(self, position: RelatetiveBoxPosition, frame: np.ndarray = None, ocr_line = True) -> str:
+        if frame is None:
+            frame = self.capturer.do_get_frame()
         cropped_frame = position.get_cropped_frame(frame)
         ocr_result = self.ocr_line(cropped_frame)
-        if DEBUG_MODE and not REPLAY_MODE:
+        if DEBUG_MODE:
             box_text_item = BoxTextItem(position=position, text=ocr_result, duration=2)
             self.overlay_window.add_box_item(box_text_item)
         return ocr_result
