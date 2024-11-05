@@ -27,15 +27,16 @@ class GameStageTask(BaseTask):
         while True:
             try:
                 # 阶段位置
+                frame = self.capturer.do_get_frame()
                 position = RelatetiveBoxPosition(0.38, 0, 0.45, 0.04)
-                ocr_result = self.ocr(position)
+                ocr_result = self.ocr(position, frame)
                 # 后处理 只接受数字和字符
                 ocr_result = re.sub(r'[^0-9-]', '', ocr_result)
                 game_stage.update(ocr_result)
 
                 # 时间位置
                 position = RelatetiveBoxPosition(0.567, 0.002, 0.617, 0.0395)
-                ocr_result = self.ocr(position)
+                ocr_result = self.ocr(position, frame)
                 # 后处理 只接受数字
                 ocr_result = re.sub(r'[^0-9]', '', ocr_result)
                 if int(ocr_result) > 2:

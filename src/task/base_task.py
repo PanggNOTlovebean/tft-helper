@@ -13,7 +13,7 @@ from capture.ReplayerCaptureMethod import ReplayerCaptureMethod
 from capture.BaseCaptureMethod import BaseCaptureMethod 
 from common.logger import log
 from common.ocr import RelatetiveBoxPosition
-from gui.overlay_window import DrawItem, OverlayWindow, BoxTextItem
+from gui.overlay_window import DrawItem, OverlayWindow, BoxTextItem, HtmlItem
 
 class BaseTask(ABC):
     name = ''
@@ -71,3 +71,9 @@ class BaseTask(ABC):
 
     def add_overlay_box_item(self, item: BoxTextItem):
         self.overlay_window.add_box_item(item)
+
+    def add_html_item(self, item: HtmlItem):
+        self.overlay_window.add_html_item(item)
+
+    def clear_html_items(self):
+        self.overlay_window.clear_html_items()

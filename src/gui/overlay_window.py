@@ -134,6 +134,10 @@ class OverlayWindow(QWidget):
         self.html_items[item.position] = item
         self.update()
 
+    def clear_html_items(self):
+        """清空所有HTML渲染项"""
+        self.html_items.clear()
+        self.update()
     
     def paintEvent(self, event):
         painter = QPainter(self)
