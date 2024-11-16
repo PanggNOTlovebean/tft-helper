@@ -1,6 +1,11 @@
+from typing import Optional, Tuple
 from rapidocr_paddle import RapidOCR
 import numpy as np
 from common.constant import MONITOR_W, MONITOR_H
+import time
+import cv2
+from common.logger import log
+
 ocr = RapidOCR(det_use_cuda=True, cls_use_cuda=True, rec_use_cuda=True, min_height = 100)
 
 
@@ -61,3 +66,35 @@ class RelativePosition:
         if isinstance(other, RelativePosition):
             return self._x == other._x and self._y == other._y
         return False
+    
+
+def find_image(template: np.ndarray, 
+               frame: np.ndarray,
+               threshold: float = 0.8) -> Optional[Tuple[int, int]]:
+    """
+    在游戏画面中查找指定图像
+    
+    Args:
+        template: 要查找的模板图片(numpy数组)
+        frame: 要搜索的图片帧(numpy数组)
+        threshold: 匹配阈值，越高要求越严格
+        timeout: 最大等待时间(秒)
+        check_interval: 检查间隔时间(秒)
+    
+    Returns:
+        成功则返回匹配位置的坐标元组(x, y)，失败返回None
+    """
+    
+    template_height, template_width = template.shape[:2]
+    start_time = time.time()
+    result = cv2.matchTemplate(frame, template, cv2.TM_CCOEFF_NORMED)
+    min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
+    
+    if max_val >= threshold:
+        x = max_loc[0] + template_width // 2
+        y = max_loc[1] + template_height // 2
+        end_time = time.time()
+        log.debug(f"找到图像，查找耗时: {end_time - start_time:.3f}秒")
+        return (x, y)
+    return None
+    

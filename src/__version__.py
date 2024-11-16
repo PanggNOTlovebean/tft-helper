@@ -5,7 +5,7 @@ APP_NAME = '云顶之弈助手'
 APP_VERSION = '1.0.0'
 LOL_PROCESS_NAME = 'League of Legends (TM) Client'
 DEBUG_MODE = True
-REPLAY_MODE = True
+REPLAY_MODE = False
 REPLAY_BASE_TIME = '2024-11-02 22-27-04'
 # 回放时间偏移量 单位秒
 REPALY_BASE_TIME_OFFSET = 40

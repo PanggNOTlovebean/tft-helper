@@ -11,7 +11,7 @@ from qfluentwidgets import (
     setTheme,
 )
 from gui.interfaces import TaskInterface
-from task.hex_task import HexTask
+from task.augument_task import AugumentTask
 
 
 class MainWindow(SplitFluentWindow):
@@ -42,7 +42,7 @@ if __name__ == "__main__":
 
     translator = FluentTranslator()
     app.installTranslator(translator)
-    task_list = [HexTask() for _ in range(3)]
+    task_list = [AugumentTask() for _ in range(3)]
       
     window = MainWindow(task_list)
     window.show()

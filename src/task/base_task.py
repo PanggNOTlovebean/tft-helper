@@ -4,7 +4,7 @@ import numpy as np
 from __version__ import DEBUG_MODE, LOL_PROCESS_NAME, REPLAY_MODE
 from typing import Protocol
 from rapidocr_paddle import RapidOCR
-from common.ocr import ocr
+from common.ocr import find_image, ocr
 from common.exception import NoFrameException
 from common.task_config import TaskConfig
 from capture.hwnd_window import HwndWindow
@@ -47,7 +47,7 @@ class BaseTask(ABC):
             box_text_item = BoxTextItem(position=position, text=ocr_result, duration=2)
             self.overlay_window.add_box_item(box_text_item)
         return ocr_result
-    
+
     def ocr_line(self, frame: np.ndarray) -> str:
         '''
         识别单行文本
@@ -59,6 +59,15 @@ class BaseTask(ABC):
             log.warning('ocr 识别失败 返回空字符串')
             return ''
         return parsed_result
+    
+    def find_image(self, template: np.ndarray, frame: np.ndarray, position: RelatetiveBoxPosition):
+        result = find_image(template, position.get_cropped_frame(frame))
+        if DEBUG_MODE:
+            if result is not None:
+                self.overlay_window.add_box_item(BoxTextItem(position=position, text='找图成功', duration=2))
+            else:
+                self.overlay_window.remove_box_item(position)
+        return result is not None
     
     def enable(self):
         self.config.set(self.config.enabled, True)

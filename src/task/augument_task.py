@@ -7,14 +7,15 @@ from common.game_info import game_stage
 from common.signal import signal_bus
 import time
 import pythoncom
+import random
 from common.ocr import RelatetiveBoxPosition, RelativePosition
 from gui.overlay_window import HtmlItem
 
 
 # 识别海克斯
-class HexTask(BaseTask):
-    name = "海克斯任务"
-    description = "识别海克斯"
+class AugumentTask(BaseTask):
+    name = "海克斯强化任务"
+    description = "识别海克斯强化"
 
     def __init__(self):
         super().__init__()
@@ -56,7 +57,14 @@ class HexTask(BaseTask):
             for ocr_position, tier_position in zip(HEX_NAME_POSITION_TUPLE, HEX_TIER_POSITION_TUPLE):
                 ocr_result = self.ocr(RelatetiveBoxPosition(*ocr_position))
                 log.info(f"海克斯天赋: {ocr_result}")
-                html_tag = create_html_tag(("强度", "T1"), ("平均排名", "4.23"), ("2-1平均排名", "3.23"))
+                # 提供随机数1~7之间小数
+                random_tier = random.choice(["T1", "T2", "T3"])
+                random_avg_rank = round(random.uniform(1, 7), 1)
+                random_avg_rank_2_1 = round(random.uniform(1, 7), 1)
+
+                html_tag = create_html_tag(("强度", f"{random_tier}"),
+                                         ("整体平均排名", f"{random_avg_rank:.2f}"),
+                                         (f"{game_stage}平均排名", f"{random_avg_rank_2_1:.2f}"))
                 self.add_html_item(HtmlItem(position=RelativePosition(*tier_position), html=html_tag, duration=3))
 
         except Exception as e:
@@ -90,4 +98,4 @@ def create_html_tag(*pairs):
 
 
 if __name__ == "__main__":
-    task = HexTask()
+    task = AugumentTask()

@@ -123,6 +123,11 @@ class OverlayWindow(QWidget):
         """添加单个绘制项"""
         self.box_items[item.position] = item
         self.update()
+    def remove_box_item(self, position: RelatetiveBoxPosition):
+        """移除指定绘制项"""
+        if position in self.box_items:
+            del self.box_items[position]
+            self.update()
 
     def add_image_item(self, item: ImageItem):
         """添加图片项"""

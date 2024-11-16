@@ -39,7 +39,7 @@ class GameStageTask(BaseTask):
                 ocr_result = self.ocr(position, frame)
                 # 后处理 只接受数字
                 ocr_result = re.sub(r'[^0-9]', '', ocr_result)
-                if int(ocr_result) > 2:
+                if ocr_result.isdigit() and int(ocr_result) > 2:
                     sleep_time = int(ocr_result) - 1
                     log.info(f'更新睡眠时间 {sleep_time}')
             except Exception as e:
