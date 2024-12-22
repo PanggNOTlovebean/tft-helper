@@ -1,19 +1,19 @@
-from abc import ABC, abstractmethod
-from qfluentwidgets import QConfig, ConfigItem, BoolValidator
+from abc import ABC
+
 import numpy as np
-from __version__ import DEBUG_MODE, LOL_PROCESS_NAME, REPLAY_MODE
-from typing import Protocol
 from rapidocr_paddle import RapidOCR
-from common.ocr import find_image, ocr
-from common.exception import NoFrameException
-from common.task_config import TaskConfig
+
+from __version__ import DEBUG_MODE, LOL_PROCESS_NAME, REPLAY_MODE
+from capture.BaseCaptureMethod import BaseCaptureMethod
 from capture.hwnd_window import HwndWindow
-from capture.WindowsGraphicsCaptureMethod import WindowsGraphicsCaptureMethod
 from capture.ReplayerCaptureMethod import ReplayerCaptureMethod
-from capture.BaseCaptureMethod import BaseCaptureMethod 
+from capture.WindowsGraphicsCaptureMethod import WindowsGraphicsCaptureMethod
+from common.exception import NoFrameException
 from common.logger import log
-from common.ocr import RelatetiveBoxPosition
-from gui.overlay_window import DrawItem, OverlayWindow, BoxTextItem, HtmlItem
+from common.ocr import find_image, ocr, RelatetiveBoxPosition
+from common.task_config import TaskConfig
+from gui.overlay_window import BoxTextItem, HtmlItem, OverlayWindow, RankFlagItem
+
 
 class BaseTask(ABC):
     name = ''
@@ -41,6 +41,8 @@ class BaseTask(ABC):
     def ocr(self, position: RelatetiveBoxPosition, frame: np.ndarray = None, ocr_line = True) -> str:
         if frame is None:
             frame = self.capturer.do_get_frame()
+        if frame is None:
+            raise NoFrameException('未获取到图像')
         cropped_frame = position.get_cropped_frame(frame)
         ocr_result = self.ocr_line(cropped_frame)
         if DEBUG_MODE:
@@ -84,5 +86,11 @@ class BaseTask(ABC):
     def add_html_item(self, item: HtmlItem):
         self.overlay_window.add_html_item(item)
 
+    def add_rank_item(self, item: RankFlagItem):
+        self.overlay_window.add_rank_item(item)
+
     def clear_html_items(self):
         self.overlay_window.clear_html_items()
+
+    def clear_rank_items(self):
+        self.overlay_window.clear_rank_items()

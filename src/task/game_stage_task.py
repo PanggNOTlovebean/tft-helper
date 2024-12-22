@@ -1,17 +1,18 @@
-from capture.WindowsGraphicsCaptureMethod import WindowsGraphicsCaptureMethod
-from task.base_task import BaseTask
-from common.logger import log
-from common.game_info import game_stage
-from common.ocr import RelatetiveBoxPosition
+import re
+import sys
 import threading
 import time
+
 import pythoncom
-import cv2
-from gui.overlay_window import DrawItem
 from PySide6.QtWidgets import QApplication
-import sys
-import re
-from gui.overlay_window import BoxTextItem
+
+from common.exception import NoFrameException
+from common.game_info import game_stage
+from common.logger import log
+from common.ocr import RelatetiveBoxPosition
+from task.base_task import BaseTask
+
+
 # 识别游戏阶段
 class GameStageTask(BaseTask):
     name = "识别游戏阶段"
@@ -23,7 +24,7 @@ class GameStageTask(BaseTask):
     
     def run(self):
         pythoncom.CoInitialize()
-        sleep_time = 0.5
+        sleep_time = 1
         while True:
             try:
                 # 阶段位置
@@ -33,19 +34,22 @@ class GameStageTask(BaseTask):
                 # 后处理 只接受数字和字符
                 ocr_result = re.sub(r'[^0-9-]', '', ocr_result)
                 game_stage.update(ocr_result)
+                #TODO 通过cv识别进度条优化睡眠时间
 
                 # 时间位置
-                position = RelatetiveBoxPosition(0.567, 0.002, 0.617, 0.0395)
-                ocr_result = self.ocr(position, frame)
+                # position = RelatetiveBoxPosition(0.5195, 0.0000, 0.6258, 0.0389)
+                # ocr_result = self.ocr(position, frame)
                 # 后处理 只接受数字
-                ocr_result = re.sub(r'[^0-9]', '', ocr_result)
-                if ocr_result.isdigit() and int(ocr_result) > 2:
-                    sleep_time = int(ocr_result) - 1
-                    log.info(f'更新睡眠时间 {sleep_time}')
+                # ocr_result = re.sub(r'[^0-9]', '', ocr_result)
+                # if ocr_result.isdigit() and int(ocr_result) > 2:
+                #     sleep_time = int(ocr_result) - 1
+                #     log.info(f'更新睡眠时间 {sleep_time}')
+            except NoFrameException as e:
+                log.error(e)
             except Exception as e:
                 log.exception(e)
             time.sleep(sleep_time)
-            sleep_time = 0.5
+            sleep_time = 1
 
 
 if __name__ == "__main__":

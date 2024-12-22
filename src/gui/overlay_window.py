@@ -1,16 +1,15 @@
-from PySide6.QtWidgets import QWidget, QApplication
-from PySide6.QtCore import Qt, QPoint, QRect, QTimer
-from PySide6.QtGui import QPainter, QPen, QColor, QFont, QImage
 import time
-from dataclasses import dataclass
-from typing import Any, Optional
 from dataclasses import dataclass, field
-import numpy as np
+from typing import Any, Optional
+
 import cv2
-import sys
-from common.meta_class import SingletonMeta
+import numpy as np
+from PySide6.QtCore import QPoint, QRect, Qt, QTimer
+from PySide6.QtGui import QColor, QFont, QImage, QPainter, QPainterPath, QPen, QTextDocument
+from PySide6.QtWidgets import QApplication, QWidget
+
 from common.ocr import RelatetiveBoxPosition, RelativePosition
-from PySide6.QtGui import QTextDocument
+
 
 @dataclass
 class DrawItem:
@@ -72,6 +71,24 @@ class HtmlItem(DrawItem):
             self._document.setTextWidth(self.width)
         self._document.setHtml(self.html)
 
+
+@dataclass
+class RankFlagItem(DrawItem):
+    """等级标志绘制项"""
+    position: RelativePosition = field(default_factory=RelativePosition)
+    rank: str = field(default='?')
+
+    # 定义等级对应的颜色
+    RANK_COLORS = {
+        'S': QColor('#e84057'),  # 红色
+        'A': QColor('#0093ff'),  # 橙色
+        'B': QColor('#00bba3'),  # 蓝色
+        'C': QColor('#ffb900'),  # 绿色
+        'D': QColor('#9aa4af'),  # 灰色
+        '?': QColor('#a88a67')  # 铜色
+    }
+
+
 class OverlayWindow(QWidget):
     
     def __init__(self):
@@ -91,7 +108,8 @@ class OverlayWindow(QWidget):
         self.box_items : dict[RelatetiveBoxPosition, BoxTextItem] = {}  # key: (x1,y1,x2,y2), value: BoxTextItem
         self.image_items = {} # key: (x,y), value: ImageItem
         self.html_items = {}  # key: RelativePosition, value: HtmlItem
-        
+        self.rank_items = {}
+
         self.font = QFont()
         self.font.setPointSize(10)
         
@@ -115,14 +133,26 @@ class OverlayWindow(QWidget):
             if self.image_items[pos].is_expired:
                 del self.image_items[pos]
                 need_update = True
-        
+
+        # 清理rank_items
+        for pos in list(self.rank_items.keys()):
+            if self.rank_items[pos].is_expired:
+                del self.rank_items[pos]
+                need_update = True
+
         if need_update:
             self.update()
-    
+
+    def add_rank_item(self, item: RankFlagItem):
+        """添加等级标志项"""
+        self.rank_items[item.position] = item
+        self.update()
+
     def add_box_item(self, item: BoxTextItem):
         """添加单个绘制项"""
         self.box_items[item.position] = item
         self.update()
+
     def remove_box_item(self, position: RelatetiveBoxPosition):
         """移除指定绘制项"""
         if position in self.box_items:
@@ -143,7 +173,11 @@ class OverlayWindow(QWidget):
         """清空所有HTML渲染项"""
         self.html_items.clear()
         self.update()
-    
+
+    def clear_rank_items(self):
+        self.rank_items.clear()
+        self.update()
+
     def paintEvent(self, event):
         painter = QPainter(self)
         painter.setRenderHint(QPainter.RenderHint.Antialiasing)
@@ -195,4 +229,33 @@ class OverlayWindow(QWidget):
             
             item._document.drawContents(painter)
             
+            painter.restore()
+
+        # 绘制所有rank_items
+        for pos, item in self.rank_items.items():
+            painter.save()
+            x, y = item.position.get_screen_position()
+            painter.translate(x, y)
+
+            # 创建盾牌形状
+            path = QPainterPath()
+            path.moveTo(5, 0)  # 左上角
+            path.lineTo(35, 0)  # 右上角
+            path.lineTo(35, 30)  # 右侧
+            path.lineTo(20, 25)  # 底部尖角
+            path.lineTo(5, 30)  # 左侧
+            path.closeSubpath()
+
+            # 设置颜色并填充
+            color = item.RANK_COLORS.get(item.rank, QColor('#808080'))
+            painter.fillPath(path, color)
+
+            # 绘制文本
+            painter.setPen(Qt.white)
+            font = painter.font()
+            font.setBold(True)
+            font.setPointSize(16)
+            painter.setFont(font)
+            painter.drawText(QRect(5, 0, 30, 30), Qt.AlignCenter, item.rank)
+
             painter.restore()

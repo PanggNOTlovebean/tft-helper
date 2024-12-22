@@ -5,6 +5,7 @@ from pathlib import Path
 import cv2
 import time
 from common.logger import log
+import sys
 
 class ReplayerCaptureMethod(BaseWindowsCaptureMethod):
     name = "回放截图文件夹"
@@ -33,7 +34,8 @@ class ReplayerCaptureMethod(BaseWindowsCaptureMethod):
             self.next_frame_name = next(self.screenshot_list)
             self.next_frame_time = int(self.next_frame_name.stem)
         except StopIteration:
-            self.next_frame_name = None
+            log.error("录像文件不存在 终止进程")
+            sys.exit()
             
 
     def do_get_frame(self):

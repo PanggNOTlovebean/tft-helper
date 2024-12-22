@@ -9,6 +9,6 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     game_stage_task = GameStageTask()
     augument_task = AugumentTask()   
-    item_task = ItemTask()
+    # item_task = ItemTask()
     # 等待主动结束
     sys.exit(app.exec())

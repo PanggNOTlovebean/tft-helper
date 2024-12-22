@@ -1,13 +1,13 @@
 from typing import Optional, Tuple
-from rapidocr_paddle import RapidOCR
+from rapidocr_onnxruntime import RapidOCR
 import numpy as np
 from common.constant import MONITOR_W, MONITOR_H
 import time
 import cv2
 from common.logger import log
 
-ocr = RapidOCR(det_use_cuda=True, cls_use_cuda=True, rec_use_cuda=True, min_height = 100)
-
+# ocr = RapidOCR(det_use_cuda=True, cls_use_cuda=True, rec_use_cuda=True, min_height=100, rec_keys_path='data/stat/rapid_ocr_dict.txt')
+ocr = RapidOCR(det_use_cuda=True, cls_use_cuda=True, rec_use_cuda=True, min_height=100)
 
 class RelatetiveBoxPosition:
     '''相对盒子坐标 包括左上角和右下角坐标'''

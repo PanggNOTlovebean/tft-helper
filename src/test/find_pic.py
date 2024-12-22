@@ -49,18 +49,39 @@ def find_image(template: np.ndarray,
     return None
 
 # 读取图片并进行测试
-hero_template = cv2.imread("D:/VSCodeProjects/tft-helper/src/test/is_look_unit.bmp")
-frame_template = cv2.imread("D:/VSCodeProjects/tft-helper/src/test/frame.png")
-position = RelatetiveBoxPosition(0.925, 0.683, 0.954, 0.711)
-croped_frame = position.get_cropped_frame(frame_template)
-if hero_template is None or frame_template is None:
-    raise ValueError("英雄.bmp或frame.png图片读取失败")
+# hero_template = cv2.imread("D:/VSCodeProjects/tft-helper/src/test/is_look_unit.bmp")
+# frame_template = cv2.imread("D:/VSCodeProjects/tft-helper/src/test/frame.png")
+
+aug_template = cv2.imread("D:/VSCodeProjects/tft-helper/src/test/pandora3.png")
+frame = cv2.imread("D:/VSCodeProjects/tft-helper/src/test/img.png")
+if aug_template is not None and aug_template.shape[2] == 4:
+    aug_template = cv2.cvtColor(aug_template, cv2.COLOR_BGRA2BGR)
+
+# position = RelatetiveBoxPosition(0.2016, 0.2590, 0.3887, 0.4972)
+position = RelatetiveBoxPosition(0.4129, 0.2507, 0.6023, 0.5000)
+# position = RelatetiveBoxPosition(0.6242, 0.2590, 0.8090, 0.4896)
+frame = position.get_cropped_frame(frame)
+
+if aug_template is not None:
+    cv2.imshow("Aug Template", aug_template)
+else:
+    print("无法加载 aug_template")
+
+if frame is not None:
+    cv2.imshow("Frame Template", frame)
+else:
+    print("无法加载 frame_template")
+# 等待用户按键关闭窗口
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+if aug_template is None or frame is None:
+    raise ValueError("图片读取失败")
 
 
 # 查找图片
 hero_result = find_image(
-    template=hero_template,
-    frame=croped_frame,
+    template=aug_template,
+    frame=frame,
     threshold=0.8,
     timeout=30,
     check_interval=0.5
