@@ -11,6 +11,9 @@ class GameStage:
     last_update_time = 0
 
     def update(self, stage: str) -> bool:
+        if not stage:
+            log.warning("未识别到游戏阶段")
+            return False
         first_num, second_num = map(int, stage.split('-'))
         if self.first_num != first_num or self.second_num != second_num:
             self.first_num = first_num

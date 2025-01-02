@@ -1,10 +1,10 @@
-import cv2
-from datetime import datetime
 from time import sleep, time
-from common.logger import log
+
+import cv2
+
 from capture.hwnd_window import HwndWindow
 from capture.WindowsGraphicsCaptureMethod import WindowsGraphicsCaptureMethod
-
+from common.logger import log
 
 if __name__ == '__main__':
     hwnd = HwndWindow('League of Legends (TM) Client')

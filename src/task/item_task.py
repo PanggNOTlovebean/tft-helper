@@ -1,17 +1,15 @@
-from capture.WindowsGraphicsCaptureMethod import WindowsGraphicsCaptureMethod
 from task.base_task import BaseTask
-from common.logger import log
-from common.game_info import game_stage
-from common.ocr import RelatetiveBoxPosition
 import threading
 import time
-import pythoncom
+
 import cv2
-from gui.overlay_window import DrawItem
-from PySide6.QtWidgets import QApplication
-import sys
-import re
-from gui.overlay_window import BoxTextItem
+import pythoncom
+
+from common.logger import log
+from common.ocr import RelatetiveBoxPosition
+from task.base_task import BaseTask
+
+
 # 装备提示
 class ItemTask(BaseTask):
     name = "装备提示任务"

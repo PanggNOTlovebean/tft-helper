@@ -18,7 +18,7 @@ def get_augments_data():
         options=chrome_options
     )
     # 设置页面加载超时时间
-    driver.set_page_load_timeout(10)
+    driver.set_page_load_timeout(100)
     
     try:
         url = "https://www.metatft.com/augments"
@@ -27,6 +27,8 @@ def get_augments_data():
             driver.get(url)
         except TimeoutException:
             log.info("加载超时，继续执行...")
+        # sleep(10)
+        log.info("加载完成")
         lang_btn = driver.find_element(By.CLASS_NAME, "LanguageLabel")
         lang_btn.click()
         sleep(1)
@@ -42,7 +44,7 @@ def get_augments_data():
         for tier, row in zip(tier, tier_list_row):
             augment_list = row.find_elements(By.CLASS_NAME, "AugmentLabel")
             for augment in augment_list:
-                name = augment.text.replace(' ', '')
+                name = ''.join(char for char in augment.text if '\u4e00' <= char <= '\u9fff' or char in '+ICD')
                 result[name] = tier
         log.info(f"统计得到{len(result)}个强化符文")
 

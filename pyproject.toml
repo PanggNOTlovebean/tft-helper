@@ -20,6 +20,7 @@ bs4 = "^0.0.2"
 selenium = "^4.27.1"
 webdriver-manager = "^4.0.2"
 rapidocr-onnxruntime = "^1.4.3"
+pytesseract = "^0.3.13"
 
 
 [build-system]

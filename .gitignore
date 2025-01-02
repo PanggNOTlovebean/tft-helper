@@ -4,3 +4,5 @@
 screenshot/
 __pycache__/
 
+# 忽略实验文件夹
+src/exp/
