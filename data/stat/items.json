@@ -1,0 +1,5082 @@
+{
+  "维克托": {
+    "recommended_builds": [
+      {
+        "items": [
+          "珠光护手",
+          "莫雷洛秘典",
+          "灭世者的死亡之帽"
+        ],
+        "avg_place": "2.39",
+        "place_change": "-0.51",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "珠光护手",
+          "莫雷洛秘典"
+        ],
+        "avg_place": "2.64",
+        "place_change": "-0.26",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "红霸符",
+          "正义之手"
+        ],
+        "avg_place": "2.29",
+        "place_change": "-0.61",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "巨人杀手",
+          "莫雷洛秘典",
+          "破防者"
+        ],
+        "avg_place": "1.82",
+        "place_change": "-1.08",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "莫雷洛秘典",
+          "灭世者的死亡之帽"
+        ],
+        "avg_place": "2.42",
+        "place_change": "-0.48",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "2.65",
+        "place_change": "-0.27",
+        "play_rate": "6.3%"
+      },
+      {
+        "name": "莫雷洛秘典",
+        "avg_place": "2.70",
+        "place_change": "-0.21",
+        "play_rate": "6.4%"
+      },
+      {
+        "name": "红霸符",
+        "avg_place": "2.79",
+        "place_change": "-0.11",
+        "play_rate": "7.1%"
+      },
+      {
+        "name": "灭世者的死亡之帽",
+        "avg_place": "2.80",
+        "place_change": "-0.11",
+        "play_rate": "4.7%"
+      },
+      {
+        "name": "破防者",
+        "avg_place": "2.66",
+        "place_change": "-0.25",
+        "play_rate": "2.5%"
+      }
+    ]
+  },
+  "梅尔": {
+    "recommended_builds": [
+      {
+        "items": [
+          "海克斯机械纹章",
+          "蓝霸符",
+          "海克斯科技枪刃"
+        ],
+        "avg_place": "2.39",
+        "place_change": "-0.69",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "1.82",
+        "place_change": "-1.26",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "大天使之杖",
+          "蓝霸符"
+        ],
+        "avg_place": "2.17",
+        "place_change": "-0.90",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "大天使之杖",
+          "朔极之矛"
+        ],
+        "avg_place": "2.27",
+        "place_change": "-0.81",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "2.23",
+        "place_change": "-0.85",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "海克斯机械纹章",
+        "avg_place": "2.38",
+        "place_change": "-0.73",
+        "play_rate": "5.4%"
+      },
+      {
+        "name": "莫雷洛秘典",
+        "avg_place": "2.81",
+        "place_change": "-0.28",
+        "play_rate": "6.8%"
+      },
+      {
+        "name": "红霸符",
+        "avg_place": "2.92",
+        "place_change": "-0.17",
+        "play_rate": "8.4%"
+      },
+      {
+        "name": "蓝霸符",
+        "avg_place": "3.01",
+        "place_change": "-0.08",
+        "play_rate": "14.1%"
+      },
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "2.91",
+        "place_change": "-0.18",
+        "play_rate": "6.5%"
+      }
+    ]
+  },
+  "沃里克": {
+    "recommended_builds": [
+      {
+        "items": [
+          "饮血剑",
+          "夜之锋刃",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "2.80",
+        "place_change": "-0.41",
+        "play_rate": "0.5%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "饮血剑",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "2.45",
+        "place_change": "-0.76",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "迷离风衣",
+          "夜之锋刃",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "2.65",
+        "place_change": "-0.56",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "饮血剑",
+          "夜之锋刃"
+        ],
+        "avg_place": "2.56",
+        "place_change": "-0.64",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "夜之锋刃",
+          "泰坦的坚决"
+        ],
+        "avg_place": "3.12",
+        "place_change": "-0.09",
+        "play_rate": "0.3%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "夜之锋刃",
+        "avg_place": "2.89",
+        "place_change": "-0.35",
+        "play_rate": "10.3%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "2.97",
+        "place_change": "-0.25",
+        "play_rate": "9.0%"
+      },
+      {
+        "name": "斯特拉克的挑战护手",
+        "avg_place": "3.14",
+        "place_change": "-0.07",
+        "play_rate": "12.8%"
+      },
+      {
+        "name": "海克斯机械纹章",
+        "avg_place": "2.78",
+        "place_change": "-0.44",
+        "play_rate": "3.6%"
+      },
+      {
+        "name": "饮血剑",
+        "avg_place": "3.27",
+        "place_change": "+0.09",
+        "play_rate": "19.2%"
+      }
+    ]
+  },
+  "玛尔扎哈": {
+    "recommended_builds": [
+      {
+        "items": [
+          "大天使之杖",
+          "莫雷洛秘典",
+          "朔极之矛"
+        ],
+        "avg_place": "3.21",
+        "place_change": "-0.56",
+        "play_rate": "0.5%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "3.49",
+        "place_change": "-0.28",
+        "play_rate": "0.8%"
+      },
+      {
+        "items": [
+          "莫雷洛秘典",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "2.98",
+        "place_change": "-0.79",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "破防者",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "3.11",
+        "place_change": "-0.65",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "破防者",
+          "朔极之矛"
+        ],
+        "avg_place": "3.03",
+        "place_change": "-0.74",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "3.46",
+        "place_change": "-0.33",
+        "play_rate": "8.6%"
+      },
+      {
+        "name": "莫雷洛秘典",
+        "avg_place": "3.48",
+        "place_change": "-0.31",
+        "play_rate": "10.1%"
+      },
+      {
+        "name": "破防者",
+        "avg_place": "3.34",
+        "place_change": "-0.45",
+        "play_rate": "6.1%"
+      },
+      {
+        "name": "大天使之杖",
+        "avg_place": "3.61",
+        "place_change": "-0.18",
+        "play_rate": "14.1%"
+      },
+      {
+        "name": "红霸符",
+        "avg_place": "3.61",
+        "place_change": "-0.17",
+        "play_rate": "12.2%"
+      }
+    ]
+  },
+  "塞薇卡": {
+    "recommended_builds": [
+      {
+        "items": [
+          "完美行刑官链锯刃",
+          "饮血剑",
+          "泰坦的坚决"
+        ],
+        "avg_place": "1.93",
+        "place_change": "-1.96",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "夜之锋刃",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "3.31",
+        "place_change": "-0.57",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "夜之锋刃",
+          "泰坦的坚决"
+        ],
+        "avg_place": "3.41",
+        "place_change": "-0.48",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "完美裂肉者",
+          "饮血剑",
+          "泰坦的坚决"
+        ],
+        "avg_place": "2.37",
+        "place_change": "-1.51",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "夜之锋刃",
+          "泰坦的坚决",
+          "正义之手"
+        ],
+        "avg_place": "3.18",
+        "place_change": "-0.71",
+        "play_rate": "0.3%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "夜之锋刃",
+        "avg_place": "3.34",
+        "place_change": "-0.62",
+        "play_rate": "12.4%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "3.38",
+        "place_change": "-0.55",
+        "play_rate": "8.2%"
+      },
+      {
+        "name": "斯特拉克的挑战护手",
+        "avg_place": "3.48",
+        "place_change": "-0.46",
+        "play_rate": "12.9%"
+      },
+      {
+        "name": "饮血剑",
+        "avg_place": "3.63",
+        "place_change": "-0.33",
+        "play_rate": "23.4%"
+      },
+      {
+        "name": "正义之手",
+        "avg_place": "3.63",
+        "place_change": "-0.31",
+        "play_rate": "16.4%"
+      }
+    ]
+  },
+  "海克斯科技锻炉": {
+    "recommended_builds": [],
+    "top_items": []
+  },
+  "杰斯": {
+    "recommended_builds": [
+      {
+        "items": [
+          "无尽之刃",
+          "巨人杀手",
+          "朔极之矛"
+        ],
+        "avg_place": "3.55",
+        "place_change": "-0.38",
+        "play_rate": "1.1%"
+      },
+      {
+        "items": [
+          "铁血征服者纹章",
+          "无尽之刃",
+          "朔极之矛"
+        ],
+        "avg_place": "3.28",
+        "place_change": "-0.65",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "破防者",
+          "朔极之矛"
+        ],
+        "avg_place": "3.59",
+        "place_change": "-0.33",
+        "play_rate": "0.8%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "无尽之刃",
+          "朔极之矛"
+        ],
+        "avg_place": "3.63",
+        "place_change": "-0.29",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "铁血征服者纹章",
+          "无尽之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "3.35",
+        "place_change": "-0.57",
+        "play_rate": "0.5%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "巨人杀手",
+        "avg_place": "3.64",
+        "place_change": "-0.31",
+        "play_rate": "10.3%"
+      },
+      {
+        "name": "死亡之刃",
+        "avg_place": "3.65",
+        "place_change": "-0.29",
+        "play_rate": "8.4%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "3.37",
+        "place_change": "-0.57",
+        "play_rate": "4.8%"
+      },
+      {
+        "name": "破防者",
+        "avg_place": "3.64",
+        "place_change": "-0.30",
+        "play_rate": "7.5%"
+      },
+      {
+        "name": "无尽之刃",
+        "avg_place": "3.82",
+        "place_change": "-0.15",
+        "play_rate": "35.3%"
+      }
+    ]
+  },
+  "乐芙兰": {
+    "recommended_builds": [
+      {
+        "items": [
+          "红霸符",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.01",
+        "place_change": "-0.91",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "莫雷洛秘典",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.21",
+        "place_change": "-0.71",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "3.81",
+        "place_change": "-0.11",
+        "play_rate": "0.8%"
+      },
+      {
+        "items": [
+          "巨人杀手",
+          "莫雷洛秘典",
+          "朔极之矛"
+        ],
+        "avg_place": "3.10",
+        "place_change": "-0.82",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "统领纹章",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "3.28",
+        "place_change": "-0.64",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "3.56",
+        "place_change": "-0.42",
+        "play_rate": "14.0%"
+      },
+      {
+        "name": "莫雷洛秘典",
+        "avg_place": "3.54",
+        "place_change": "-0.41",
+        "play_rate": "7.8%"
+      },
+      {
+        "name": "红霸符",
+        "avg_place": "3.66",
+        "place_change": "-0.29",
+        "play_rate": "11.6%"
+      },
+      {
+        "name": "灭世者的死亡之帽",
+        "avg_place": "3.52",
+        "place_change": "-0.42",
+        "play_rate": "6.1%"
+      },
+      {
+        "name": "破防者",
+        "avg_place": "3.34",
+        "place_change": "-0.61",
+        "play_rate": "3.7%"
+      }
+    ]
+  },
+  "兰博": {
+    "recommended_builds": [
+      {
+        "items": [
+          "冕卫",
+          "珠光护手",
+          "正义之手"
+        ],
+        "avg_place": "3.30",
+        "place_change": "-0.64",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "冕卫",
+          "珠光护手"
+        ],
+        "avg_place": "3.30",
+        "place_change": "-0.64",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "珠光护手",
+          "正义之手"
+        ],
+        "avg_place": "3.37",
+        "place_change": "-0.57",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "灭世者的死亡之帽",
+          "正义之手"
+        ],
+        "avg_place": "3.02",
+        "place_change": "-0.91",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "离子火花",
+          "珠光护手",
+          "正义之手"
+        ],
+        "avg_place": "3.46",
+        "place_change": "-0.48",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "3.47",
+        "place_change": "-0.51",
+        "play_rate": "8.0%"
+      },
+      {
+        "name": "正义之手",
+        "avg_place": "3.60",
+        "place_change": "-0.38",
+        "play_rate": "10.9%"
+      },
+      {
+        "name": "冕卫",
+        "avg_place": "3.64",
+        "place_change": "-0.35",
+        "play_rate": "13.9%"
+      },
+      {
+        "name": "灭世者的死亡之帽",
+        "avg_place": "3.43",
+        "place_change": "-0.54",
+        "play_rate": "6.0%"
+      },
+      {
+        "name": "珠光护手",
+        "avg_place": "3.66",
+        "place_change": "-0.31",
+        "play_rate": "12.6%"
+      }
+    ]
+  },
+  "莫德凯撒": {
+    "recommended_builds": [
+      {
+        "items": [
+          "珠光护手",
+          "水银",
+          "正义之手"
+        ],
+        "avg_place": "3.42",
+        "place_change": "-0.55",
+        "play_rate": "1.2%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "纳什之牙",
+          "水银"
+        ],
+        "avg_place": "3.45",
+        "place_change": "-0.52",
+        "play_rate": "1.1%"
+      },
+      {
+        "items": [
+          "夜之锋刃",
+          "纳什之牙",
+          "水银"
+        ],
+        "avg_place": "3.52",
+        "place_change": "-0.45",
+        "play_rate": "1.4%"
+      },
+      {
+        "items": [
+          "夜之锋刃",
+          "珠光护手",
+          "水银"
+        ],
+        "avg_place": "3.19",
+        "place_change": "-0.79",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "纳什之牙",
+          "水银",
+          "正义之手"
+        ],
+        "avg_place": "3.58",
+        "place_change": "-0.39",
+        "play_rate": "0.9%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "水银",
+        "avg_place": "3.68",
+        "place_change": "-0.38",
+        "play_rate": "22.3%"
+      },
+      {
+        "name": "夜之锋刃",
+        "avg_place": "3.64",
+        "place_change": "-0.39",
+        "play_rate": "15.5%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "3.49",
+        "place_change": "-0.51",
+        "play_rate": "7.0%"
+      },
+      {
+        "name": "纳什之牙",
+        "avg_place": "3.80",
+        "place_change": "-0.22",
+        "play_rate": "20.9%"
+      },
+      {
+        "name": "珠光护手",
+        "avg_place": "3.87",
+        "place_change": "-0.13",
+        "play_rate": "18.9%"
+      }
+    ]
+  },
+  "金克丝": {
+    "recommended_builds": [
+      {
+        "items": [
+          "无尽之刃",
+          "破防者",
+          "朔极之矛"
+        ],
+        "avg_place": "3.38",
+        "place_change": "-0.77",
+        "play_rate": "2.5%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "巨人杀手",
+          "朔极之矛"
+        ],
+        "avg_place": "3.47",
+        "place_change": "-0.69",
+        "play_rate": "3.4%"
+      },
+      {
+        "items": [
+          "死亡之刃",
+          "无尽之刃",
+          "朔极之矛"
+        ],
+        "avg_place": "3.42",
+        "place_change": "-0.72",
+        "play_rate": "2.0%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "无尽之刃",
+          "朔极之矛"
+        ],
+        "avg_place": "3.43",
+        "place_change": "-0.71",
+        "play_rate": "1.9%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "最后的轻语",
+          "朔极之矛"
+        ],
+        "avg_place": "3.73",
+        "place_change": "-0.43",
+        "play_rate": "7.9%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "朔极之矛",
+        "avg_place": "3.95",
+        "place_change": "-0.43",
+        "play_rate": "58.2%"
+      },
+      {
+        "name": "破防者",
+        "avg_place": "3.57",
+        "place_change": "-0.61",
+        "play_rate": "8.9%"
+      },
+      {
+        "name": "无尽之刃",
+        "avg_place": "3.91",
+        "place_change": "-0.42",
+        "play_rate": "49.1%"
+      },
+      {
+        "name": "死亡之刃",
+        "avg_place": "3.59",
+        "place_change": "-0.59",
+        "play_rate": "8.4%"
+      },
+      {
+        "name": "巨人杀手",
+        "avg_place": "3.70",
+        "place_change": "-0.49",
+        "play_rate": "12.4%"
+      }
+    ]
+  },
+  "魔腾": {
+    "recommended_builds": [
+      {
+        "items": [
+          "狙击手的专注",
+          "鱼骨头",
+          "无尽之刃"
+        ],
+        "avg_place": "2.34",
+        "place_change": "-1.93",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "鱼骨头",
+          "疾射火炮",
+          "无尽之刃"
+        ],
+        "avg_place": "2.90",
+        "place_change": "-1.37",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "狙击手的专注",
+          "鱼骨头",
+          "疾射火炮"
+        ],
+        "avg_place": "2.13",
+        "place_change": "-2.14",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "疾射火炮",
+          "无尽之刃",
+          "正义之手"
+        ],
+        "avg_place": "3.62",
+        "place_change": "-0.66",
+        "play_rate": "2.9%"
+      },
+      {
+        "items": [
+          "狙击手的专注",
+          "疾射火炮",
+          "无尽之刃"
+        ],
+        "avg_place": "2.96",
+        "place_change": "-1.30",
+        "play_rate": "0.6%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "鱼骨头",
+        "avg_place": "3.25",
+        "place_change": "-1.13",
+        "play_rate": "10.9%"
+      },
+      {
+        "name": "狙击手的专注",
+        "avg_place": "3.39",
+        "place_change": "-0.95",
+        "play_rate": "9.6%"
+      },
+      {
+        "name": "疾射火炮",
+        "avg_place": "3.50",
+        "place_change": "-0.85",
+        "play_rate": "11.6%"
+      },
+      {
+        "name": "无尽之刃",
+        "avg_place": "4.03",
+        "place_change": "-0.34",
+        "play_rate": "31.1%"
+      },
+      {
+        "name": "水银",
+        "avg_place": "4.18",
+        "place_change": "-0.09",
+        "play_rate": "14.6%"
+      }
+    ]
+  },
+  "克格莫": {
+    "recommended_builds": [
+      {
+        "items": [
+          "完美毒素倾泻",
+          "炼金男爵纹章",
+          "朔极之矛"
+        ],
+        "avg_place": "1.21",
+        "place_change": "-3.11",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "完美毒素倾泻",
+          "炼金男爵纹章",
+          "纳什之牙"
+        ],
+        "avg_place": "1.12",
+        "place_change": "-3.18",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "智慧末刃",
+          "鬼索的狂暴之刃"
+        ],
+        "avg_place": "3.83",
+        "place_change": "-0.47",
+        "play_rate": "1.1%"
+      },
+      {
+        "items": [
+          "投机者之刃",
+          "鬼索的狂暴之刃",
+          "海克斯科技枪刃"
+        ],
+        "avg_place": "3.90",
+        "place_change": "-0.41",
+        "play_rate": "1.7%"
+      },
+      {
+        "items": [
+          "投机者之刃",
+          "大天使之杖",
+          "鬼索的狂暴之刃"
+        ],
+        "avg_place": "3.99",
+        "place_change": "-0.32",
+        "play_rate": "3.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "完美毒素倾泻",
+        "avg_place": "1.19",
+        "place_change": "-3.15",
+        "play_rate": "1.2%"
+      },
+      {
+        "name": "炼金男爵纹章",
+        "avg_place": "1.91",
+        "place_change": "-2.43",
+        "play_rate": "1.5%"
+      },
+      {
+        "name": "投机者之刃",
+        "avg_place": "4.03",
+        "place_change": "-0.30",
+        "play_rate": "9.9%"
+      },
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "4.09",
+        "place_change": "-0.25",
+        "play_rate": "16.2%"
+      },
+      {
+        "name": "巫妖之祸",
+        "avg_place": "3.67",
+        "place_change": "-0.66",
+        "play_rate": "4.3%"
+      }
+    ]
+  },
+  "崔斯特": {
+    "recommended_builds": [
+      {
+        "items": [
+          "大天使之杖",
+          "珠光护手",
+          "朔极之矛"
+        ],
+        "avg_place": "4.19",
+        "place_change": "-0.13",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "莫雷洛秘典",
+          "朔极之矛"
+        ],
+        "avg_place": "3.67",
+        "place_change": "-0.65",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "莫雷洛秘典",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.89",
+        "place_change": "-0.43",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "鬼索的狂暴之刃",
+          "莫雷洛秘典"
+        ],
+        "avg_place": "3.72",
+        "place_change": "-0.60",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "莫雷洛秘典",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "4.00",
+        "place_change": "-0.32",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "莫雷洛秘典",
+        "avg_place": "4.16",
+        "place_change": "-0.17",
+        "play_rate": "8.2%"
+      },
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "3.98",
+        "place_change": "-0.36",
+        "play_rate": "4.6%"
+      },
+      {
+        "name": "海克斯机械纹章",
+        "avg_place": "3.78",
+        "place_change": "-0.55",
+        "play_rate": "2.3%"
+      },
+      {
+        "name": "红霸符",
+        "avg_place": "4.20",
+        "place_change": "-0.13",
+        "play_rate": "4.9%"
+      },
+      {
+        "name": "鬼索的狂暴之刃",
+        "avg_place": "4.41",
+        "place_change": "+0.10",
+        "play_rate": "9.3%"
+      }
+    ]
+  },
+  "俄洛伊": {
+    "recommended_builds": [
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "3.99",
+        "place_change": "-0.35",
+        "play_rate": "1.1%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.07",
+        "place_change": "-0.27",
+        "play_rate": "1.4%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "石像鬼石板甲",
+          "日炎斗篷"
+        ],
+        "avg_place": "4.07",
+        "place_change": "-0.27",
+        "play_rate": "1.3%"
+      },
+      {
+        "items": [
+          "棘刺背心",
+          "巨龙之爪",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.12",
+        "place_change": "-0.22",
+        "play_rate": "2.5%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.07",
+        "place_change": "-0.26",
+        "play_rate": "1.3%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "救赎",
+        "avg_place": "4.03",
+        "place_change": "-0.35",
+        "play_rate": "13.6%"
+      },
+      {
+        "name": "棘刺背心",
+        "avg_place": "4.12",
+        "place_change": "-0.26",
+        "play_rate": "15.5%"
+      },
+      {
+        "name": "巨龙之爪",
+        "avg_place": "4.18",
+        "place_change": "-0.20",
+        "play_rate": "22.7%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.20",
+        "place_change": "-0.17",
+        "play_rate": "23.5%"
+      },
+      {
+        "name": "坚定之心",
+        "avg_place": "4.17",
+        "place_change": "-0.19",
+        "play_rate": "10.9%"
+      }
+    ]
+  },
+  "阿卡丽": {
+    "recommended_builds": [
+      {
+        "items": [
+          "海克斯机械纹章",
+          "珠光护手",
+          "正义之手"
+        ],
+        "avg_place": "3.66",
+        "place_change": "-0.68",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "饮血剑",
+          "珠光护手"
+        ],
+        "avg_place": "3.46",
+        "place_change": "-0.88",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "泰坦的坚决",
+          "正义之手"
+        ],
+        "avg_place": "3.33",
+        "place_change": "-1.01",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "夜之锋刃",
+          "正义之手"
+        ],
+        "avg_place": "3.49",
+        "place_change": "-0.85",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "饮血剑",
+          "正义之手"
+        ],
+        "avg_place": "3.63",
+        "place_change": "-0.71",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "海克斯机械纹章",
+        "avg_place": "3.94",
+        "place_change": "-0.42",
+        "play_rate": "3.9%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.06",
+        "place_change": "-0.29",
+        "play_rate": "4.2%"
+      },
+      {
+        "name": "正义之手",
+        "avg_place": "4.28",
+        "place_change": "-0.06",
+        "play_rate": "6.1%"
+      },
+      {
+        "name": "饮血剑",
+        "avg_place": "4.22",
+        "place_change": "-0.13",
+        "play_rate": "3.1%"
+      },
+      {
+        "name": "珠光护手",
+        "avg_place": "4.37",
+        "place_change": "+0.03",
+        "play_rate": "4.6%"
+      }
+    ]
+  },
+  "阿木木": {
+    "recommended_builds": [
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.38",
+        "place_change": "-0.98",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "石像鬼石板甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.86",
+        "place_change": "-0.50",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "棘刺背心",
+          "巨龙之爪",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.92",
+        "place_change": "-0.44",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "薄暮法袍",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.29",
+        "place_change": "-1.07",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.12",
+        "place_change": "-0.24",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.06",
+        "place_change": "-0.32",
+        "play_rate": "4.3%"
+      },
+      {
+        "name": "薄暮法袍",
+        "avg_place": "3.78",
+        "place_change": "-0.59",
+        "play_rate": "2.3%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "3.87",
+        "place_change": "-0.51",
+        "play_rate": "2.6%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.09",
+        "place_change": "-0.28",
+        "play_rate": "3.6%"
+      },
+      {
+        "name": "石像鬼石板甲",
+        "avg_place": "4.19",
+        "place_change": "-0.18",
+        "play_rate": "4.2%"
+      }
+    ]
+  },
+  "伊莉丝": {
+    "recommended_builds": [
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "3.89",
+        "place_change": "-0.47",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "圣盾使的誓约",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "3.18",
+        "place_change": "-1.18",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.09",
+        "place_change": "-0.27",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "圣盾使的誓约",
+          "日炎斗篷"
+        ],
+        "avg_place": "3.36",
+        "place_change": "-1.00",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.57",
+        "place_change": "-0.80",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "圣盾使的誓约",
+        "avg_place": "3.67",
+        "place_change": "-0.76",
+        "play_rate": "8.5%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "3.84",
+        "place_change": "-0.59",
+        "play_rate": "11.0%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "3.83",
+        "place_change": "-0.57",
+        "play_rate": "7.6%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "3.96",
+        "place_change": "-0.45",
+        "play_rate": "9.5%"
+      },
+      {
+        "name": "狂徒铠甲",
+        "avg_place": "4.02",
+        "place_change": "-0.37",
+        "play_rate": "8.8%"
+      }
+    ]
+  },
+  "安蓓萨": {
+    "recommended_builds": [
+      {
+        "items": [
+          "迷离风衣",
+          "夜之锋刃",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "3.74",
+        "place_change": "-0.64",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "夜之锋刃",
+          "泰坦的坚决",
+          "正义之手"
+        ],
+        "avg_place": "4.18",
+        "place_change": "-0.20",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "夜之锋刃",
+          "泰坦的坚决"
+        ],
+        "avg_place": "4.28",
+        "place_change": "-0.10",
+        "play_rate": "2.4%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "饮血剑",
+          "夜之锋刃"
+        ],
+        "avg_place": "3.46",
+        "place_change": "-0.92",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "饮血剑",
+          "泰坦的坚决"
+        ],
+        "avg_place": "3.33",
+        "place_change": "-1.05",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "3.61",
+        "place_change": "-0.82",
+        "play_rate": "6.5%"
+      },
+      {
+        "name": "海克斯机械纹章",
+        "avg_place": "3.49",
+        "place_change": "-0.93",
+        "play_rate": "4.5%"
+      },
+      {
+        "name": "夜之锋刃",
+        "avg_place": "4.24",
+        "place_change": "-0.17",
+        "play_rate": "23.7%"
+      },
+      {
+        "name": "迷离风衣",
+        "avg_place": "3.87",
+        "place_change": "-0.53",
+        "play_rate": "4.0%"
+      },
+      {
+        "name": "斯特拉克的挑战护手",
+        "avg_place": "4.31",
+        "place_change": "-0.08",
+        "play_rate": "16.2%"
+      }
+    ]
+  },
+  "伊泽瑞尔": {
+    "recommended_builds": [
+      {
+        "items": [
+          "卢安娜的飓风",
+          "卢安娜的飓风",
+          "卢安娜的飓风"
+        ],
+        "avg_place": "4.33",
+        "place_change": "-0.05",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "卢安娜的飓风",
+          "卢安娜的飓风"
+        ],
+        "avg_place": "4.30",
+        "place_change": "-0.09",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "最后的轻语",
+          "卢安娜的飓风",
+          "卢安娜的飓风"
+        ],
+        "avg_place": "3.95",
+        "place_change": "-0.44",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "死亡之刃",
+          "卢安娜的飓风",
+          "卢安娜的飓风"
+        ],
+        "avg_place": "4.18",
+        "place_change": "-0.21",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "最后的轻语",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.61",
+        "place_change": "-0.77",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "3.99",
+        "place_change": "-0.42",
+        "play_rate": "5.5%"
+      },
+      {
+        "name": "卢安娜的飓风",
+        "avg_place": "4.26",
+        "place_change": "-0.13",
+        "play_rate": "5.9%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.02",
+        "place_change": "-0.37",
+        "play_rate": "2.2%"
+      },
+      {
+        "name": "最后的轻语",
+        "avg_place": "4.55",
+        "place_change": "+0.18",
+        "play_rate": "8.1%"
+      },
+      {
+        "name": "破防者",
+        "avg_place": "4.38",
+        "place_change": "-0.01",
+        "play_rate": "3.0%"
+      }
+    ]
+  },
+  "佐伊": {
+    "recommended_builds": [
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "珠光护手",
+          "灭世者的死亡之帽"
+        ],
+        "avg_place": "3.77",
+        "place_change": "-0.62",
+        "play_rate": "1.1%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "珠光护手",
+          "破防者"
+        ],
+        "avg_place": "4.03",
+        "place_change": "-0.37",
+        "play_rate": "4.0%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "鬼索的狂暴之刃",
+          "珠光护手"
+        ],
+        "avg_place": "4.07",
+        "place_change": "-0.32",
+        "play_rate": "3.4%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "破防者",
+          "朔极之矛"
+        ],
+        "avg_place": "4.10",
+        "place_change": "-0.30",
+        "play_rate": "2.0%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "珠光护手",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "4.05",
+        "place_change": "-0.34",
+        "play_rate": "0.9%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "破防者",
+        "avg_place": "4.08",
+        "place_change": "-0.34",
+        "play_rate": "10.7%"
+      },
+      {
+        "name": "灭世者的死亡之帽",
+        "avg_place": "4.13",
+        "place_change": "-0.28",
+        "play_rate": "8.9%"
+      },
+      {
+        "name": "鬼索的狂暴之刃",
+        "avg_place": "4.28",
+        "place_change": "-0.17",
+        "play_rate": "39.1%"
+      },
+      {
+        "name": "珠光护手",
+        "avg_place": "4.33",
+        "place_change": "-0.14",
+        "play_rate": "57.2%"
+      },
+      {
+        "name": "大天使之杖",
+        "avg_place": "4.32",
+        "place_change": "-0.09",
+        "play_rate": "18.9%"
+      }
+    ]
+  },
+  "蔚": {
+    "recommended_builds": [
+      {
+        "items": [
+          "饮血剑",
+          "夜之锋刃",
+          "泰坦的坚决"
+        ],
+        "avg_place": "4.16",
+        "place_change": "-0.25",
+        "play_rate": "1.9%"
+      },
+      {
+        "items": [
+          "迷离风衣",
+          "夜之锋刃",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "3.90",
+        "place_change": "-0.51",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "斯特拉克的挑战护手",
+          "泰坦的坚决"
+        ],
+        "avg_place": "4.27",
+        "place_change": "-0.15",
+        "play_rate": "4.8%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "水银",
+          "泰坦的坚决"
+        ],
+        "avg_place": "3.92",
+        "place_change": "-0.49",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "夜之锋刃",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "4.23",
+        "place_change": "-0.18",
+        "play_rate": "1.3%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "3.81",
+        "place_change": "-0.64",
+        "play_rate": "7.4%"
+      },
+      {
+        "name": "夜之锋刃",
+        "avg_place": "4.19",
+        "place_change": "-0.26",
+        "play_rate": "14.4%"
+      },
+      {
+        "name": "斯特拉克的挑战护手",
+        "avg_place": "4.25",
+        "place_change": "-0.20",
+        "play_rate": "21.0%"
+      },
+      {
+        "name": "家人纹章",
+        "avg_place": "3.41",
+        "place_change": "-1.02",
+        "play_rate": "2.2%"
+      },
+      {
+        "name": "泰坦的坚决",
+        "avg_place": "4.33",
+        "place_change": "-0.11",
+        "play_rate": "24.0%"
+      }
+    ]
+  },
+  "赛恩": {
+    "recommended_builds": [],
+    "top_items": []
+  },
+  "艾瑞莉娅": {
+    "recommended_builds": [
+      {
+        "items": [
+          "离子火花",
+          "坚定之心",
+          "救赎"
+        ],
+        "avg_place": "3.36",
+        "place_change": "-1.04",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "离子火花",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.05",
+        "place_change": "-0.36",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.76",
+        "place_change": "-0.65",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "离子火花",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.11",
+        "place_change": "-0.29",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "棘刺背心",
+          "离子火花",
+          "日炎斗篷"
+        ],
+        "avg_place": "3.86",
+        "place_change": "-0.55",
+        "play_rate": "0.0%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.29",
+        "place_change": "-0.13",
+        "play_rate": "4.3%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "3.94",
+        "place_change": "-0.48",
+        "play_rate": "1.7%"
+      },
+      {
+        "name": "离子火花",
+        "avg_place": "4.27",
+        "place_change": "-0.14",
+        "play_rate": "2.3%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.32",
+        "place_change": "-0.09",
+        "play_rate": "2.3%"
+      },
+      {
+        "name": "坚定之心",
+        "avg_place": "4.24",
+        "place_change": "-0.16",
+        "play_rate": "1.3%"
+      }
+    ]
+  },
+  "布里茨": {
+    "recommended_builds": [
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.65",
+        "place_change": "-0.77",
+        "play_rate": "0.5%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "救赎",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.51",
+        "place_change": "-0.91",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.09",
+        "place_change": "-0.33",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "薄暮法袍",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.46",
+        "place_change": "-0.96",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "3.97",
+        "place_change": "-0.45",
+        "play_rate": "0.6%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "薄暮法袍",
+        "avg_place": "3.79",
+        "place_change": "-0.68",
+        "play_rate": "7.3%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "3.99",
+        "place_change": "-0.47",
+        "play_rate": "9.2%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.08",
+        "place_change": "-0.41",
+        "play_rate": "16.6%"
+      },
+      {
+        "name": "坚定之心",
+        "avg_place": "4.05",
+        "place_change": "-0.40",
+        "play_rate": "7.6%"
+      },
+      {
+        "name": "狂徒铠甲",
+        "avg_place": "4.18",
+        "place_change": "-0.27",
+        "play_rate": "14.7%"
+      }
+    ]
+  },
+  "库奇": {
+    "recommended_builds": [
+      {
+        "items": [
+          "金币收集者",
+          "无尽之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "3.72",
+        "place_change": "-0.72",
+        "play_rate": "1.2%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "最后的轻语",
+          "破防者"
+        ],
+        "avg_place": "3.87",
+        "place_change": "-0.57",
+        "play_rate": "1.2%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "最后的轻语",
+          "巨人杀手"
+        ],
+        "avg_place": "4.07",
+        "place_change": "-0.38",
+        "play_rate": "3.4%"
+      },
+      {
+        "items": [
+          "死亡之刃",
+          "无尽之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "4.02",
+        "place_change": "-0.41",
+        "play_rate": "1.3%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "最后的轻语",
+          "红霸符"
+        ],
+        "avg_place": "4.14",
+        "place_change": "-0.29",
+        "play_rate": "2.0%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "破防者",
+        "avg_place": "3.90",
+        "place_change": "-0.58",
+        "play_rate": "7.9%"
+      },
+      {
+        "name": "巨人杀手",
+        "avg_place": "4.12",
+        "place_change": "-0.37",
+        "play_rate": "16.4%"
+      },
+      {
+        "name": "死亡之刃",
+        "avg_place": "4.09",
+        "place_change": "-0.38",
+        "play_rate": "9.4%"
+      },
+      {
+        "name": "金币收集者",
+        "avg_place": "3.87",
+        "place_change": "-0.59",
+        "play_rate": "5.4%"
+      },
+      {
+        "name": "最后的轻语",
+        "avg_place": "4.29",
+        "place_change": "-0.23",
+        "play_rate": "36.2%"
+      }
+    ]
+  },
+  "婕拉": {
+    "recommended_builds": [
+      {
+        "items": [
+          "珠光护手",
+          "莫雷洛秘典",
+          "朔极之矛"
+        ],
+        "avg_place": "3.27",
+        "place_change": "-1.19",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "珠光护手",
+          "朔极之矛"
+        ],
+        "avg_place": "4.13",
+        "place_change": "-0.32",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "莫雷洛秘典",
+          "朔极之矛"
+        ],
+        "avg_place": "3.86",
+        "place_change": "-0.59",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "4.60",
+        "place_change": "+0.15",
+        "play_rate": "0.5%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "3.57",
+        "place_change": "-0.88",
+        "play_rate": "0.0%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "莫雷洛秘典",
+        "avg_place": "4.07",
+        "place_change": "-0.39",
+        "play_rate": "3.6%"
+      },
+      {
+        "name": "大天使之杖",
+        "avg_place": "4.41",
+        "place_change": "-0.05",
+        "play_rate": "3.9%"
+      },
+      {
+        "name": "珠光护手",
+        "avg_place": "4.38",
+        "place_change": "-0.07",
+        "play_rate": "3.2%"
+      },
+      {
+        "name": "朔极之矛",
+        "avg_place": "4.50",
+        "place_change": "+0.05",
+        "play_rate": "4.8%"
+      },
+      {
+        "name": "适应性头盔",
+        "avg_place": "4.05",
+        "place_change": "-0.40",
+        "play_rate": "1.0%"
+      }
+    ]
+  },
+  "图奇": {
+    "recommended_builds": [
+      {
+        "items": [
+          "金币收集者",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.08",
+        "place_change": "-0.39",
+        "play_rate": "2.4%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "无尽之刃",
+          "红霸符"
+        ],
+        "avg_place": "4.35",
+        "place_change": "-0.13",
+        "play_rate": "10.6%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "无尽之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "4.36",
+        "place_change": "-0.12",
+        "play_rate": "12.1%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "鬼索的狂暴之刃",
+          "红霸符"
+        ],
+        "avg_place": "4.14",
+        "place_change": "-0.33",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "最后的轻语",
+          "红霸符"
+        ],
+        "avg_place": "4.28",
+        "place_change": "-0.19",
+        "play_rate": "1.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "红霸符",
+        "avg_place": "4.36",
+        "place_change": "-0.13",
+        "play_rate": "19.3%"
+      },
+      {
+        "name": "最后的轻语",
+        "avg_place": "4.42",
+        "place_change": "-0.06",
+        "play_rate": "21.9%"
+      },
+      {
+        "name": "金币收集者",
+        "avg_place": "4.10",
+        "place_change": "-0.38",
+        "play_rate": "3.9%"
+      },
+      {
+        "name": "巨人杀手",
+        "avg_place": "4.42",
+        "place_change": "-0.05",
+        "play_rate": "8.0%"
+      },
+      {
+        "name": "死亡之刃",
+        "avg_place": "4.42",
+        "place_change": "-0.05",
+        "play_rate": "6.9%"
+      }
+    ]
+  },
+  "蒙多医生": {
+    "recommended_builds": [
+      {
+        "items": [
+          "格斗家纹章",
+          "石像鬼石板甲",
+          "救赎"
+        ],
+        "avg_place": "4.14",
+        "place_change": "-0.34",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.20",
+        "place_change": "-0.28",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "格斗家纹章",
+          "石像鬼石板甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.24",
+        "place_change": "-0.24",
+        "play_rate": "1.6%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "离子火花",
+          "日炎斗篷"
+        ],
+        "avg_place": "4.03",
+        "place_change": "-0.45",
+        "play_rate": "0.7%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.07",
+        "place_change": "-0.41",
+        "play_rate": "0.7%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.23",
+        "place_change": "-0.29",
+        "play_rate": "15.7%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.23",
+        "place_change": "-0.29",
+        "play_rate": "14.4%"
+      },
+      {
+        "name": "离子火花",
+        "avg_place": "4.20",
+        "place_change": "-0.30",
+        "play_rate": "11.3%"
+      },
+      {
+        "name": "坚定之心",
+        "avg_place": "4.18",
+        "place_change": "-0.32",
+        "play_rate": "8.2%"
+      },
+      {
+        "name": "棘刺背心",
+        "avg_place": "4.23",
+        "place_change": "-0.26",
+        "play_rate": "10.5%"
+      }
+    ]
+  },
+  "瑟提": {
+    "recommended_builds": [
+      {
+        "items": [
+          "死亡之刃",
+          "狂徒铠甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.34",
+        "place_change": "-1.14",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "死亡之刃",
+          "死亡之刃",
+          "狂徒铠甲"
+        ],
+        "avg_place": "2.84",
+        "place_change": "-1.63",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "离子火花",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "3.59",
+        "place_change": "-0.88",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "圣盾使的誓约",
+          "石像鬼石板甲",
+          "日炎斗篷"
+        ],
+        "avg_place": "3.04",
+        "place_change": "-1.44",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "离子火花",
+          "救赎",
+          "薄暮法袍"
+        ],
+        "avg_place": "2.91",
+        "place_change": "-1.56",
+        "play_rate": "0.0%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.16",
+        "place_change": "-0.32",
+        "play_rate": "4.5%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.07",
+        "place_change": "-0.41",
+        "play_rate": "2.8%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.35",
+        "place_change": "-0.13",
+        "play_rate": "3.4%"
+      },
+      {
+        "name": "薄暮法袍",
+        "avg_place": "4.02",
+        "place_change": "-0.46",
+        "play_rate": "1.6%"
+      },
+      {
+        "name": "狂徒铠甲",
+        "avg_place": "4.43",
+        "place_change": "-0.05",
+        "play_rate": "3.2%"
+      }
+    ]
+  },
+  "普朗克": {
+    "recommended_builds": [
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "无尽之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "4.47",
+        "place_change": "-0.02",
+        "play_rate": "2.4%"
+      },
+      {
+        "items": [
+          "铁血征服者纹章",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.40",
+        "place_change": "-0.09",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "金币收集者",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.09",
+        "place_change": "-0.40",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "无尽之刃",
+          "最后的轻语",
+          "朔极之矛"
+        ],
+        "avg_place": "4.52",
+        "place_change": "+0.03",
+        "play_rate": "1.4%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "最后的轻语",
+          "红霸符"
+        ],
+        "avg_place": "3.85",
+        "place_change": "-0.64",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "3.95",
+        "place_change": "-0.56",
+        "play_rate": "3.7%"
+      },
+      {
+        "name": "最后的轻语",
+        "avg_place": "4.41",
+        "place_change": "-0.09",
+        "play_rate": "12.5%"
+      },
+      {
+        "name": "红霸符",
+        "avg_place": "4.26",
+        "place_change": "-0.24",
+        "play_rate": "4.2%"
+      },
+      {
+        "name": "鬼索的狂暴之刃",
+        "avg_place": "4.53",
+        "place_change": "+0.04",
+        "play_rate": "14.9%"
+      },
+      {
+        "name": "无尽之刃",
+        "avg_place": "4.55",
+        "place_change": "+0.08",
+        "play_rate": "16.4%"
+      }
+    ]
+  },
+  "洛里斯": {
+    "recommended_builds": [
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.22",
+        "place_change": "-0.27",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.16",
+        "place_change": "-0.34",
+        "play_rate": "0.5%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.95",
+        "place_change": "-0.55",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "救赎",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.66",
+        "place_change": "-0.84",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "薄暮法袍",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.85",
+        "place_change": "-0.65",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "薄暮法袍",
+        "avg_place": "4.15",
+        "place_change": "-0.37",
+        "play_rate": "7.5%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.30",
+        "place_change": "-0.22",
+        "play_rate": "14.1%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.26",
+        "place_change": "-0.25",
+        "play_rate": "9.0%"
+      },
+      {
+        "name": "棘刺背心",
+        "avg_place": "4.29",
+        "place_change": "-0.22",
+        "play_rate": "5.4%"
+      },
+      {
+        "name": "狂徒铠甲",
+        "avg_place": "4.46",
+        "place_change": "-0.03",
+        "play_rate": "12.6%"
+      }
+    ]
+  },
+  "蔚奥莱": {
+    "recommended_builds": [
+      {
+        "items": [
+          "迷离风衣",
+          "夜之锋刃",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "3.05",
+        "place_change": "-1.50",
+        "play_rate": "3.8%"
+      },
+      {
+        "items": [
+          "迷离风衣",
+          "饮血剑",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "3.49",
+        "place_change": "-1.01",
+        "play_rate": "0.7%"
+      },
+      {
+        "items": [
+          "黎明锋刃",
+          "迷离风衣",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "2.47",
+        "place_change": "-2.03",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "迷离风衣",
+          "饮血剑",
+          "夜之锋刃"
+        ],
+        "avg_place": "3.70",
+        "place_change": "-0.80",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "斯特拉克的挑战护手",
+          "泰坦的坚决"
+        ],
+        "avg_place": "4.33",
+        "place_change": "-0.20",
+        "play_rate": "18.9%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "迷离风衣",
+        "avg_place": "3.30",
+        "place_change": "-1.30",
+        "play_rate": "8.2%"
+      },
+      {
+        "name": "斯特拉克的挑战护手",
+        "avg_place": "4.30",
+        "place_change": "-0.39",
+        "play_rate": "50.3%"
+      },
+      {
+        "name": "夜之锋刃",
+        "avg_place": "4.20",
+        "place_change": "-0.38",
+        "play_rate": "22.6%"
+      },
+      {
+        "name": "饮血剑",
+        "avg_place": "4.42",
+        "place_change": "-0.15",
+        "play_rate": "53.2%"
+      },
+      {
+        "name": "泰坦的坚决",
+        "avg_place": "4.40",
+        "place_change": "-0.15",
+        "play_rate": "41.2%"
+      }
+    ]
+  },
+  "范德尔": {
+    "recommended_builds": [
+      {
+        "items": [
+          "日炎斗篷",
+          "救赎",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.75",
+        "place_change": "-0.75",
+        "play_rate": "0.8%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.00",
+        "place_change": "-0.51",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.12",
+        "place_change": "-0.38",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "3.73",
+        "place_change": "-0.77",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "救赎",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.92",
+        "place_change": "-0.58",
+        "play_rate": "0.5%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "救赎",
+        "avg_place": "4.07",
+        "place_change": "-0.53",
+        "play_rate": "18.9%"
+      },
+      {
+        "name": "薄暮法袍",
+        "avg_place": "4.12",
+        "place_change": "-0.42",
+        "play_rate": "11.8%"
+      },
+      {
+        "name": "巨龙之爪",
+        "avg_place": "4.15",
+        "place_change": "-0.37",
+        "play_rate": "8.2%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.26",
+        "place_change": "-0.27",
+        "play_rate": "14.5%"
+      },
+      {
+        "name": "棘刺背心",
+        "avg_place": "4.12",
+        "place_change": "-0.40",
+        "play_rate": "6.0%"
+      }
+    ]
+  },
+  "薇古丝": {
+    "recommended_builds": [
+      {
+        "items": [
+          "莫雷洛秘典",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.75",
+        "place_change": "-0.76",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.67",
+        "place_change": "-0.84",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "3.90",
+        "place_change": "-0.61",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "4.28",
+        "place_change": "-0.23",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "红霸符",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.68",
+        "place_change": "-0.83",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "3.99",
+        "place_change": "-0.57",
+        "play_rate": "9.3%"
+      },
+      {
+        "name": "珠光护手",
+        "avg_place": "4.17",
+        "place_change": "-0.36",
+        "play_rate": "8.1%"
+      },
+      {
+        "name": "朔极之矛",
+        "avg_place": "4.22",
+        "place_change": "-0.33",
+        "play_rate": "11.9%"
+      },
+      {
+        "name": "莫雷洛秘典",
+        "avg_place": "3.97",
+        "place_change": "-0.56",
+        "play_rate": "4.9%"
+      },
+      {
+        "name": "大天使之杖",
+        "avg_place": "3.87",
+        "place_change": "-0.67",
+        "play_rate": "4.0%"
+      }
+    ]
+  },
+  "崔丝塔娜": {
+    "recommended_builds": [
+      {
+        "items": [
+          "试验品纹章",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "3.72",
+        "place_change": "-0.79",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "海克斯科技枪刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.13",
+        "place_change": "-0.38",
+        "play_rate": "2.2%"
+      },
+      {
+        "items": [
+          "金币收集者",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.19",
+        "place_change": "-0.33",
+        "play_rate": "3.5%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "无尽之刃",
+          "巨人杀手"
+        ],
+        "avg_place": "4.16",
+        "place_change": "-0.36",
+        "play_rate": "1.9%"
+      },
+      {
+        "items": [
+          "死亡之刃",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.20",
+        "place_change": "-0.31",
+        "play_rate": "0.9%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "无尽之刃",
+        "avg_place": "4.35",
+        "place_change": "-0.21",
+        "play_rate": "27.4%"
+      },
+      {
+        "name": "鬼索的狂暴之刃",
+        "avg_place": "4.41",
+        "place_change": "-0.14",
+        "play_rate": "32.0%"
+      },
+      {
+        "name": "金币收集者",
+        "avg_place": "4.22",
+        "place_change": "-0.30",
+        "play_rate": "6.0%"
+      },
+      {
+        "name": "巨人杀手",
+        "avg_place": "4.13",
+        "place_change": "-0.40",
+        "play_rate": "4.2%"
+      },
+      {
+        "name": "试验品纹章",
+        "avg_place": "3.79",
+        "place_change": "-0.73",
+        "play_rate": "2.3%"
+      }
+    ]
+  },
+  "蕾欧娜": {
+    "recommended_builds": [
+      {
+        "items": [
+          "离子火花",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "3.89",
+        "place_change": "-0.62",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "离子火花",
+          "坚定之心",
+          "日炎斗篷"
+        ],
+        "avg_place": "4.20",
+        "place_change": "-0.31",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "离子火花",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.27",
+        "place_change": "-0.24",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "坚定之心",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "3.84",
+        "place_change": "-0.67",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.31",
+        "place_change": "-0.20",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "救赎",
+        "avg_place": "4.11",
+        "place_change": "-0.43",
+        "play_rate": "7.2%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.34",
+        "place_change": "-0.18",
+        "play_rate": "9.6%"
+      },
+      {
+        "name": "离子火花",
+        "avg_place": "4.37",
+        "place_change": "-0.15",
+        "play_rate": "9.3%"
+      },
+      {
+        "name": "棘刺背心",
+        "avg_place": "4.35",
+        "place_change": "-0.17",
+        "play_rate": "7.1%"
+      },
+      {
+        "name": "坚定之心",
+        "avg_place": "4.39",
+        "place_change": "-0.13",
+        "play_rate": "7.7%"
+      }
+    ]
+  },
+  "卡西奥佩娅": {
+    "recommended_builds": [
+      {
+        "items": [
+          "蓝霸符",
+          "珠光护手",
+          "纳什之牙"
+        ],
+        "avg_place": "4.35",
+        "place_change": "-0.17",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "蓝霸符",
+          "海克斯科技枪刃",
+          "纳什之牙"
+        ],
+        "avg_place": "3.37",
+        "place_change": "-1.15",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "纳什之牙",
+          "巨人杀手",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.37",
+        "place_change": "-1.15",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "红霸符",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "4.24",
+        "place_change": "-0.28",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "蓝霸符",
+          "纳什之牙",
+          "灭世者的死亡之帽"
+        ],
+        "avg_place": "3.74",
+        "place_change": "-0.78",
+        "play_rate": "0.0%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "4.55",
+        "place_change": "+0.03",
+        "play_rate": "6.4%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.27",
+        "place_change": "-0.25",
+        "play_rate": "1.5%"
+      },
+      {
+        "name": "基克的先驱",
+        "avg_place": "4.03",
+        "place_change": "-0.49",
+        "play_rate": "0.6%"
+      },
+      {
+        "name": "蓝霸符",
+        "avg_place": "4.57",
+        "place_change": "+0.05",
+        "play_rate": "1.9%"
+      },
+      {
+        "name": "金锅铲冠冕",
+        "avg_place": "4.04",
+        "place_change": "-0.48",
+        "play_rate": "0.5%"
+      }
+    ]
+  },
+  "莫甘娜": {
+    "recommended_builds": [
+      {
+        "items": [
+          "莫雷洛秘典",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.51",
+        "place_change": "-1.01",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "3.85",
+        "place_change": "-0.67",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "红霸符",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.62",
+        "place_change": "-0.90",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "蓝霸符",
+          "莫雷洛秘典",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.06",
+        "place_change": "-1.46",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "3.77",
+        "place_change": "-0.75",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "4.12",
+        "place_change": "-0.43",
+        "play_rate": "6.2%"
+      },
+      {
+        "name": "朔极之矛",
+        "avg_place": "4.28",
+        "place_change": "-0.26",
+        "play_rate": "7.0%"
+      },
+      {
+        "name": "蓝霸符",
+        "avg_place": "3.72",
+        "place_change": "-0.82",
+        "play_rate": "2.7%"
+      },
+      {
+        "name": "莫雷洛秘典",
+        "avg_place": "4.05",
+        "place_change": "-0.49",
+        "play_rate": "3.6%"
+      },
+      {
+        "name": "红霸符",
+        "avg_place": "4.30",
+        "place_change": "-0.23",
+        "play_rate": "5.3%"
+      }
+    ]
+  },
+  "娜美": {
+    "recommended_builds": [
+      {
+        "items": [
+          "珠光护手",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "4.61",
+        "place_change": "+0.08",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "破防者",
+          "朔极之矛"
+        ],
+        "avg_place": "4.14",
+        "place_change": "-0.39",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "4.54",
+        "place_change": "+0.01",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "珠光护手",
+          "朔极之矛"
+        ],
+        "avg_place": "4.61",
+        "place_change": "+0.08",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "红霸符",
+          "朔极之矛",
+          "斯塔缇克电刃"
+        ],
+        "avg_place": "3.90",
+        "place_change": "-0.63",
+        "play_rate": "0.0%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "4.22",
+        "place_change": "-0.32",
+        "play_rate": "4.2%"
+      },
+      {
+        "name": "莫雷洛秘典",
+        "avg_place": "4.38",
+        "place_change": "-0.16",
+        "play_rate": "4.2%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.02",
+        "place_change": "-0.52",
+        "play_rate": "1.6%"
+      },
+      {
+        "name": "红霸符",
+        "avg_place": "4.46",
+        "place_change": "-0.08",
+        "play_rate": "3.1%"
+      },
+      {
+        "name": "纳什之牙",
+        "avg_place": "4.52",
+        "place_change": "-0.01",
+        "play_rate": "3.5%"
+      }
+    ]
+  },
+  "斯特卜": {
+    "recommended_builds": [
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.35",
+        "place_change": "-0.19",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "饮血剑",
+          "泰坦的坚决"
+        ],
+        "avg_place": "4.66",
+        "place_change": "+0.12",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "救赎",
+          "薄暮法袍"
+        ],
+        "avg_place": "4.03",
+        "place_change": "-0.51",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "薄暮法袍",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.66",
+        "place_change": "-0.88",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "救赎",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.99",
+        "place_change": "-0.55",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "救赎",
+        "avg_place": "4.44",
+        "place_change": "-0.10",
+        "play_rate": "2.5%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.32",
+        "place_change": "-0.22",
+        "play_rate": "1.6%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.57",
+        "place_change": "+0.03",
+        "play_rate": "2.8%"
+      },
+      {
+        "name": "薄暮法袍",
+        "avg_place": "4.44",
+        "place_change": "-0.11",
+        "play_rate": "1.5%"
+      },
+      {
+        "name": "兰顿之兆",
+        "avg_place": "4.25",
+        "place_change": "-0.30",
+        "play_rate": "0.8%"
+      }
+    ]
+  },
+  "拉克丝": {
+    "recommended_builds": [
+      {
+        "items": [
+          "阿福天使之杖",
+          "大天使之杖",
+          "饮血剑"
+        ],
+        "avg_place": "3.61",
+        "place_change": "-0.95",
+        "play_rate": "1.9%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "大天使之杖",
+          "饮血剑"
+        ],
+        "avg_place": "4.11",
+        "place_change": "-0.53",
+        "play_rate": "18.3%"
+      },
+      {
+        "items": [
+          "福佑饮血剑",
+          "大天使之杖",
+          "大天使之杖"
+        ],
+        "avg_place": "3.68",
+        "place_change": "-0.86",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "大天使之杖",
+          "大天使之杖"
+        ],
+        "avg_place": "3.79",
+        "place_change": "-0.75",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "死亡之蔑",
+          "大天使之杖",
+          "大天使之杖"
+        ],
+        "avg_place": "3.62",
+        "place_change": "-0.93",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "大天使之杖",
+        "avg_place": "4.23",
+        "place_change": "-0.59",
+        "play_rate": "47.8%"
+      },
+      {
+        "name": "饮血剑",
+        "avg_place": "4.25",
+        "place_change": "-0.38",
+        "play_rate": "23.5%"
+      },
+      {
+        "name": "阿福天使之杖",
+        "avg_place": "3.76",
+        "place_change": "-0.80",
+        "play_rate": "2.5%"
+      },
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "4.55",
+        "place_change": "+0.01",
+        "play_rate": "3.7%"
+      },
+      {
+        "name": "金锅铲冠冕",
+        "avg_place": "3.94",
+        "place_change": "-0.61",
+        "play_rate": "0.7%"
+      }
+    ]
+  },
+  "爆爆": {
+    "recommended_builds": [
+      {
+        "items": [
+          "大天使之杖",
+          "珠光护手",
+          "朔极之矛"
+        ],
+        "avg_place": "4.20",
+        "place_change": "-0.35",
+        "play_rate": "0.5%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "灭世者的死亡之帽",
+          "朔极之矛"
+        ],
+        "avg_place": "4.14",
+        "place_change": "-0.41",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "灭世者的死亡之帽",
+          "正义之手"
+        ],
+        "avg_place": "3.99",
+        "place_change": "-0.56",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "搏击手纹章",
+          "珠光护手",
+          "正义之手"
+        ],
+        "avg_place": "3.74",
+        "place_change": "-0.81",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "正义之手",
+          "正义之手"
+        ],
+        "avg_place": "4.08",
+        "place_change": "-0.46",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "灭世者的死亡之帽",
+        "avg_place": "4.22",
+        "place_change": "-0.35",
+        "play_rate": "7.5%"
+      },
+      {
+        "name": "珠光护手",
+        "avg_place": "4.29",
+        "place_change": "-0.29",
+        "play_rate": "11.5%"
+      },
+      {
+        "name": "大天使之杖",
+        "avg_place": "4.29",
+        "place_change": "-0.27",
+        "play_rate": "8.4%"
+      },
+      {
+        "name": "朔极之矛",
+        "avg_place": "4.34",
+        "place_change": "-0.23",
+        "play_rate": "8.5%"
+      },
+      {
+        "name": "搏击手纹章",
+        "avg_place": "3.88",
+        "place_change": "-0.70",
+        "play_rate": "3.5%"
+      }
+    ]
+  },
+  "德莱文": {
+    "recommended_builds": [
+      {
+        "items": [
+          "家人纹章",
+          "鬼索的狂暴之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "3.80",
+        "place_change": "-0.77",
+        "play_rate": "2.4%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "最后的轻语",
+          "巨人杀手"
+        ],
+        "avg_place": "3.80",
+        "place_change": "-0.76",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "鬼索的狂暴之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "3.92",
+        "place_change": "-0.64",
+        "play_rate": "1.7%"
+      },
+      {
+        "items": [
+          "家人纹章",
+          "鱼骨头",
+          "鬼索的狂暴之刃"
+        ],
+        "avg_place": "2.92",
+        "place_change": "-1.63",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "死亡之刃",
+          "鬼索的狂暴之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "3.89",
+        "place_change": "-0.66",
+        "play_rate": "0.7%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "家人纹章",
+        "avg_place": "3.99",
+        "place_change": "-0.60",
+        "play_rate": "8.3%"
+      },
+      {
+        "name": "鬼索的狂暴之刃",
+        "avg_place": "4.35",
+        "place_change": "-0.33",
+        "play_rate": "39.5%"
+      },
+      {
+        "name": "最后的轻语",
+        "avg_place": "4.29",
+        "place_change": "-0.32",
+        "play_rate": "19.7%"
+      },
+      {
+        "name": "巨人杀手",
+        "avg_place": "4.02",
+        "place_change": "-0.56",
+        "play_rate": "4.3%"
+      },
+      {
+        "name": "死亡之刃",
+        "avg_place": "4.07",
+        "place_change": "-0.49",
+        "play_rate": "3.3%"
+      }
+    ]
+  },
+  "芮尔": {
+    "recommended_builds": [
+      {
+        "items": [
+          "离子火花",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "3.62",
+        "place_change": "-0.93",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "离子火花",
+          "坚定之心",
+          "救赎"
+        ],
+        "avg_place": "3.40",
+        "place_change": "-1.15",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "离子火花",
+          "日炎斗篷"
+        ],
+        "avg_place": "4.24",
+        "place_change": "-0.31",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "能量圣杯",
+          "钢铁烈阳之匣",
+          "基克的先驱"
+        ],
+        "avg_place": "1.07",
+        "place_change": "-3.48",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "离子火花",
+          "救赎"
+        ],
+        "avg_place": "3.89",
+        "place_change": "-0.65",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.05",
+        "place_change": "-0.54",
+        "play_rate": "7.9%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.01",
+        "place_change": "-0.56",
+        "play_rate": "4.6%"
+      },
+      {
+        "name": "离子火花",
+        "avg_place": "4.20",
+        "place_change": "-0.37",
+        "play_rate": "5.5%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.31",
+        "place_change": "-0.26",
+        "play_rate": "5.9%"
+      },
+      {
+        "name": "坚定之心",
+        "avg_place": "4.14",
+        "place_change": "-0.42",
+        "play_rate": "3.7%"
+      }
+    ]
+  },
+  "盖伦": {
+    "recommended_builds": [
+      {
+        "items": [
+          "日炎斗篷",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.83",
+        "place_change": "-0.73",
+        "play_rate": "1.1%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.00",
+        "place_change": "-0.56",
+        "play_rate": "1.4%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.12",
+        "place_change": "-0.43",
+        "play_rate": "1.5%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.13",
+        "place_change": "-0.43",
+        "play_rate": "1.2%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "狂徒铠甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.95",
+        "place_change": "-0.60",
+        "play_rate": "0.8%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "狂徒铠甲",
+        "avg_place": "4.24",
+        "place_change": "-0.51",
+        "play_rate": "40.6%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.24",
+        "place_change": "-0.39",
+        "play_rate": "19.3%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.29",
+        "place_change": "-0.34",
+        "play_rate": "24.2%"
+      },
+      {
+        "name": "坚定之心",
+        "avg_place": "4.18",
+        "place_change": "-0.40",
+        "play_rate": "8.3%"
+      },
+      {
+        "name": "棘刺背心",
+        "avg_place": "4.27",
+        "place_change": "-0.31",
+        "play_rate": "10.9%"
+      }
+    ]
+  },
+  "希尔科": {
+    "recommended_builds": [
+      {
+        "items": [
+          "完美烈性病毒",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "1.39",
+        "place_change": "-3.19",
+        "play_rate": "0.7%"
+      },
+      {
+        "items": [
+          "完美电震军刀",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "1.46",
+        "place_change": "-3.11",
+        "play_rate": "0.5%"
+      },
+      {
+        "items": [
+          "完美毒素倾泻",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "1.77",
+        "place_change": "-2.80",
+        "play_rate": "0.5%"
+      },
+      {
+        "items": [
+          "完美烈性病毒",
+          "珠光护手",
+          "朔极之矛"
+        ],
+        "avg_place": "1.59",
+        "place_change": "-2.98",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "纳什之牙",
+          "朔极之矛",
+          "朔极之矛"
+        ],
+        "avg_place": "4.22",
+        "place_change": "-0.37",
+        "play_rate": "9.4%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "完美烈性病毒",
+        "avg_place": "1.51",
+        "place_change": "-3.11",
+        "play_rate": "2.0%"
+      },
+      {
+        "name": "朔极之矛",
+        "avg_place": "4.48",
+        "place_change": "-0.68",
+        "play_rate": "92.5%"
+      },
+      {
+        "name": "完美电震军刀",
+        "avg_place": "1.48",
+        "place_change": "-3.12",
+        "play_rate": "1.4%"
+      },
+      {
+        "name": "完美毒素倾泻",
+        "avg_place": "1.87",
+        "place_change": "-2.72",
+        "play_rate": "1.3%"
+      },
+      {
+        "name": "纳什之牙",
+        "avg_place": "4.49",
+        "place_change": "-0.15",
+        "play_rate": "55.4%"
+      }
+    ]
+  },
+  "努努和威朗普": {
+    "recommended_builds": [
+      {
+        "items": [
+          "日炎斗篷",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.80",
+        "place_change": "-0.78",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "日炎斗篷",
+          "救赎",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.70",
+        "place_change": "-0.88",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.18",
+        "place_change": "-0.40",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.21",
+        "place_change": "-0.37",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.12",
+        "place_change": "-0.46",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "救赎",
+        "avg_place": "4.27",
+        "place_change": "-0.34",
+        "play_rate": "9.6%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.32",
+        "place_change": "-0.28",
+        "play_rate": "8.3%"
+      },
+      {
+        "name": "狂徒铠甲",
+        "avg_place": "4.40",
+        "place_change": "-0.19",
+        "play_rate": "7.1%"
+      },
+      {
+        "name": "薄暮法袍",
+        "avg_place": "4.23",
+        "place_change": "-0.37",
+        "play_rate": "4.4%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.36",
+        "place_change": "-0.23",
+        "play_rate": "5.3%"
+      }
+    ]
+  },
+  "弗拉基米尔": {
+    "recommended_builds": [
+      {
+        "items": [
+          "大天使之杖",
+          "鬼索的狂暴之刃",
+          "海克斯科技枪刃"
+        ],
+        "avg_place": "4.73",
+        "place_change": "+0.14",
+        "play_rate": "0.7%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "离子火花",
+          "日炎斗篷"
+        ],
+        "avg_place": "3.98",
+        "place_change": "-0.61",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "饮血剑",
+          "鬼索的狂暴之刃"
+        ],
+        "avg_place": "4.93",
+        "place_change": "+0.34",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "鬼索的清算",
+          "大天使之杖",
+          "海克斯科技枪刃"
+        ],
+        "avg_place": "4.38",
+        "place_change": "-0.22",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "智慧末刃",
+          "鬼索的狂暴之刃"
+        ],
+        "avg_place": "4.24",
+        "place_change": "-0.36",
+        "play_rate": "0.0%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.35",
+        "place_change": "-0.25",
+        "play_rate": "3.7%"
+      },
+      {
+        "name": "兰顿之兆",
+        "avg_place": "4.23",
+        "place_change": "-0.37",
+        "play_rate": "1.0%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.29",
+        "place_change": "-0.30",
+        "play_rate": "1.1%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.46",
+        "place_change": "-0.13",
+        "play_rate": "1.6%"
+      },
+      {
+        "name": "离子火花",
+        "avg_place": "4.47",
+        "place_change": "-0.13",
+        "play_rate": "1.5%"
+      }
+    ]
+  },
+  "麦迪": {
+    "recommended_builds": [
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "无尽之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "4.68",
+        "place_change": "+0.06",
+        "play_rate": "1.7%"
+      },
+      {
+        "items": [
+          "金币收集者",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.13",
+        "place_change": "-0.50",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "无尽之刃",
+          "巨人杀手"
+        ],
+        "avg_place": "4.49",
+        "place_change": "-0.14",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "死亡之刃",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.55",
+        "place_change": "-0.08",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "无尽之刃",
+          "破防者"
+        ],
+        "avg_place": "4.18",
+        "place_change": "-0.45",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "鬼索的狂暴之刃",
+        "avg_place": "4.78",
+        "place_change": "+0.18",
+        "play_rate": "14.6%"
+      },
+      {
+        "name": "卢安娜的飓风",
+        "avg_place": "4.26",
+        "place_change": "-0.37",
+        "play_rate": "1.6%"
+      },
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.02",
+        "place_change": "-0.61",
+        "play_rate": "0.8%"
+      },
+      {
+        "name": "金铲铲冠冕",
+        "avg_place": "4.45",
+        "place_change": "-0.18",
+        "play_rate": "1.2%"
+      },
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "4.38",
+        "place_change": "-0.25",
+        "play_rate": "0.8%"
+      }
+    ]
+  },
+  "斯维因": {
+    "recommended_builds": [
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.07",
+        "place_change": "-0.56",
+        "play_rate": "1.2%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "日炎斗篷",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.32",
+        "place_change": "-0.31",
+        "play_rate": "0.8%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.37",
+        "place_change": "-0.26",
+        "play_rate": "0.7%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "石像鬼石板甲",
+          "日炎斗篷"
+        ],
+        "avg_place": "4.07",
+        "place_change": "-0.56",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "日炎斗篷",
+          "救赎"
+        ],
+        "avg_place": "4.06",
+        "place_change": "-0.58",
+        "play_rate": "0.4%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "3.93",
+        "place_change": "-0.75",
+        "play_rate": "6.5%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.35",
+        "place_change": "-0.32",
+        "play_rate": "12.5%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.34",
+        "place_change": "-0.32",
+        "play_rate": "10.1%"
+      },
+      {
+        "name": "石像鬼石板甲",
+        "avg_place": "4.48",
+        "place_change": "-0.18",
+        "play_rate": "16.4%"
+      },
+      {
+        "name": "巨龙之爪",
+        "avg_place": "4.46",
+        "place_change": "-0.19",
+        "play_rate": "7.8%"
+      }
+    ]
+  },
+  "刀疤": {
+    "recommended_builds": [
+      {
+        "items": [
+          "海克斯机械纹章",
+          "石像鬼石板甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.76",
+        "place_change": "-0.90",
+        "play_rate": "0.5%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "石像鬼石板甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.31",
+        "place_change": "-0.35",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "石像鬼石板甲",
+          "坚定之心"
+        ],
+        "avg_place": "3.31",
+        "place_change": "-1.35",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "棘刺背心",
+          "巨龙之爪",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.32",
+        "place_change": "-0.34",
+        "play_rate": "0.8%"
+      },
+      {
+        "items": [
+          "海克斯机械纹章",
+          "巨龙之爪",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.41",
+        "place_change": "-1.25",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "海克斯机械纹章",
+        "avg_place": "3.82",
+        "place_change": "-0.90",
+        "play_rate": "7.2%"
+      },
+      {
+        "name": "坚定之心",
+        "avg_place": "4.30",
+        "place_change": "-0.39",
+        "play_rate": "8.7%"
+      },
+      {
+        "name": "巨龙之爪",
+        "avg_place": "4.34",
+        "place_change": "-0.36",
+        "play_rate": "11.3%"
+      },
+      {
+        "name": "棘刺背心",
+        "avg_place": "4.24",
+        "place_change": "-0.44",
+        "play_rate": "6.8%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.36",
+        "place_change": "-0.33",
+        "play_rate": "9.0%"
+      }
+    ]
+  },
+  "卡蜜尔": {
+    "recommended_builds": [
+      {
+        "items": [
+          "饮血剑",
+          "泰坦的坚决",
+          "正义之手"
+        ],
+        "avg_place": "4.83",
+        "place_change": "+0.16",
+        "play_rate": "0.8%"
+      },
+      {
+        "items": [
+          "暗行者之爪",
+          "泰坦的坚决",
+          "正义之手"
+        ],
+        "avg_place": "3.55",
+        "place_change": "-1.12",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "暗行者之爪",
+          "饮血剑",
+          "正义之手"
+        ],
+        "avg_place": "3.92",
+        "place_change": "-0.75",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "暗行者之爪",
+          "密银黎明",
+          "正义之手"
+        ],
+        "avg_place": "3.15",
+        "place_change": "-1.52",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "暗行者之爪",
+          "夜之锋刃",
+          "正义之手"
+        ],
+        "avg_place": "4.18",
+        "place_change": "-0.49",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.48",
+        "place_change": "-0.20",
+        "play_rate": "3.0%"
+      },
+      {
+        "name": "正义之手",
+        "avg_place": "4.87",
+        "place_change": "+0.21",
+        "play_rate": "7.4%"
+      },
+      {
+        "name": "暗行者之爪",
+        "avg_place": "4.12",
+        "place_change": "-0.55",
+        "play_rate": "0.7%"
+      },
+      {
+        "name": "泰坦的坚决",
+        "avg_place": "4.91",
+        "place_change": "+0.25",
+        "play_rate": "5.0%"
+      },
+      {
+        "name": "幽魂弯刀",
+        "avg_place": "4.23",
+        "place_change": "-0.44",
+        "play_rate": "0.5%"
+      }
+    ]
+  },
+  "烈娜塔": {
+    "recommended_builds": [
+      {
+        "items": [
+          "大天使之杖",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "4.17",
+        "place_change": "-0.74",
+        "play_rate": "29.3%"
+      },
+      {
+        "items": [
+          "阿福天使之杖",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "3.64",
+        "place_change": "-1.07",
+        "play_rate": "2.1%"
+      },
+      {
+        "items": [
+          "希拉娜之矛",
+          "大天使之杖",
+          "纳什之牙"
+        ],
+        "avg_place": "3.63",
+        "place_change": "-1.06",
+        "play_rate": "0.8%"
+      },
+      {
+        "items": [
+          "完美微光绽放",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "2.09",
+        "place_change": "-2.60",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "大天使之杖",
+          "朔极之矛"
+        ],
+        "avg_place": "4.19",
+        "place_change": "-0.51",
+        "play_rate": "0.8%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "大天使之杖",
+        "avg_place": "4.27",
+        "place_change": "-0.77",
+        "play_rate": "45.8%"
+      },
+      {
+        "name": "朔极之矛",
+        "avg_place": "4.39",
+        "place_change": "-0.64",
+        "play_rate": "52.8%"
+      },
+      {
+        "name": "纳什之牙",
+        "avg_place": "4.34",
+        "place_change": "-0.61",
+        "play_rate": "43.1%"
+      },
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "4.15",
+        "place_change": "-0.57",
+        "play_rate": "6.0%"
+      },
+      {
+        "name": "回收左轮枪",
+        "avg_place": "3.05",
+        "place_change": "-1.66",
+        "play_rate": "1.6%"
+      }
+    ]
+  },
+  "泽丽": {
+    "recommended_builds": [
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "海克斯科技枪刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.20",
+        "place_change": "-0.50",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "无尽之刃",
+          "最后的轻语"
+        ],
+        "avg_place": "4.42",
+        "place_change": "-0.29",
+        "play_rate": "3.9%"
+      },
+      {
+        "items": [
+          "死亡之刃",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.41",
+        "place_change": "-0.29",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "无尽之刃",
+          "红霸符"
+        ],
+        "avg_place": "4.46",
+        "place_change": "-0.24",
+        "play_rate": "1.2%"
+      },
+      {
+        "items": [
+          "鬼索的狂暴之刃",
+          "鬼索的狂暴之刃",
+          "无尽之刃"
+        ],
+        "avg_place": "4.55",
+        "place_change": "-0.15",
+        "play_rate": "2.4%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "4.37",
+        "place_change": "-0.35",
+        "play_rate": "7.1%"
+      },
+      {
+        "name": "鬼索的狂暴之刃",
+        "avg_place": "4.58",
+        "place_change": "-0.18",
+        "play_rate": "36.2%"
+      },
+      {
+        "name": "最后的轻语",
+        "avg_place": "4.53",
+        "place_change": "-0.19",
+        "play_rate": "12.4%"
+      },
+      {
+        "name": "无尽之刃",
+        "avg_place": "4.60",
+        "place_change": "-0.13",
+        "play_rate": "27.7%"
+      },
+      {
+        "name": "死亡之刃",
+        "avg_place": "4.47",
+        "place_change": "-0.24",
+        "play_rate": "5.6%"
+      }
+    ]
+  },
+  "吉格斯": {
+    "recommended_builds": [
+      {
+        "items": [
+          "珠光护手",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "4.32",
+        "place_change": "-0.41",
+        "play_rate": "7.1%"
+      },
+      {
+        "items": [
+          "希拉娜之矛",
+          "珠光护手",
+          "纳什之牙"
+        ],
+        "avg_place": "3.83",
+        "place_change": "-0.88",
+        "play_rate": "0.4%"
+      },
+      {
+        "items": [
+          "珠光护手",
+          "红霸符",
+          "朔极之矛"
+        ],
+        "avg_place": "4.37",
+        "place_change": "-0.33",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "魔蕴",
+          "珠光护手",
+          "朔极之矛"
+        ],
+        "avg_place": "3.66",
+        "place_change": "-1.05",
+        "play_rate": "0.3%"
+      },
+      {
+        "items": [
+          "大天使之杖",
+          "纳什之牙",
+          "朔极之矛"
+        ],
+        "avg_place": "4.46",
+        "place_change": "-0.25",
+        "play_rate": "0.6%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "纳什之牙",
+        "avg_place": "4.48",
+        "place_change": "-0.26",
+        "play_rate": "14.7%"
+      },
+      {
+        "name": "朔极之矛",
+        "avg_place": "4.55",
+        "place_change": "-0.20",
+        "play_rate": "23.5%"
+      },
+      {
+        "name": "珠光护手",
+        "avg_place": "4.55",
+        "place_change": "-0.19",
+        "play_rate": "17.7%"
+      },
+      {
+        "name": "黑色玫瑰纹章",
+        "avg_place": "4.34",
+        "place_change": "-0.39",
+        "play_rate": "4.5%"
+      },
+      {
+        "name": "斯塔缇克电刃",
+        "avg_place": "4.51",
+        "place_change": "-0.20",
+        "play_rate": "4.1%"
+      }
+    ]
+  },
+  "辛吉德": {
+    "recommended_builds": [
+      {
+        "items": [
+          "冕卫",
+          "石像鬼石板甲",
+          "救赎"
+        ],
+        "avg_place": "3.63",
+        "place_change": "-1.10",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "冕卫",
+          "石像鬼石板甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.89",
+        "place_change": "-0.84",
+        "play_rate": "1.3%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "救赎",
+          "狂徒铠甲"
+        ],
+        "avg_place": "3.89",
+        "place_change": "-0.83",
+        "play_rate": "1.0%"
+      },
+      {
+        "items": [
+          "巨龙之爪",
+          "石像鬼石板甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.15",
+        "place_change": "-0.57",
+        "play_rate": "0.8%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "坚定之心",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.30",
+        "place_change": "-0.43",
+        "play_rate": "0.9%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "救赎",
+        "avg_place": "3.89",
+        "place_change": "-0.89",
+        "play_rate": "7.7%"
+      },
+      {
+        "name": "冕卫",
+        "avg_place": "3.97",
+        "place_change": "-0.82",
+        "play_rate": "8.3%"
+      },
+      {
+        "name": "石像鬼石板甲",
+        "avg_place": "4.25",
+        "place_change": "-0.61",
+        "play_rate": "23.8%"
+      },
+      {
+        "name": "狂徒铠甲",
+        "avg_place": "4.23",
+        "place_change": "-0.56",
+        "play_rate": "14.2%"
+      },
+      {
+        "name": "巨龙之爪",
+        "avg_place": "4.17",
+        "place_change": "-0.59",
+        "play_rate": "7.9%"
+      }
+    ]
+  },
+  "德莱厄斯": {
+    "recommended_builds": [
+      {
+        "items": [
+          "能量圣杯",
+          "钢铁烈阳之匣",
+          "基克的先驱"
+        ],
+        "avg_place": "1.07",
+        "place_change": "-3.66",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "家人纹章",
+          "救赎",
+          "薄暮法袍"
+        ],
+        "avg_place": "3.36",
+        "place_change": "-1.37",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "家人纹章",
+          "搏击手纹章",
+          "斯特拉克的挑战护手"
+        ],
+        "avg_place": "3.00",
+        "place_change": "-1.73",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "家人纹章",
+          "搏击手纹章",
+          "日炎斗篷"
+        ],
+        "avg_place": "2.53",
+        "place_change": "-2.19",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "家人纹章",
+          "搏击手纹章",
+          "正义之手"
+        ],
+        "avg_place": "2.42",
+        "place_change": "-2.30",
+        "play_rate": "0.0%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.10",
+        "place_change": "-0.67",
+        "play_rate": "5.5%"
+      },
+      {
+        "name": "家人纹章",
+        "avg_place": "3.87",
+        "place_change": "-0.88",
+        "play_rate": "3.9%"
+      },
+      {
+        "name": "搏击手纹章",
+        "avg_place": "4.12",
+        "place_change": "-0.62",
+        "play_rate": "3.8%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.18",
+        "place_change": "-0.56",
+        "play_rate": "3.0%"
+      },
+      {
+        "name": "薄暮法袍",
+        "avg_place": "4.20",
+        "place_change": "-0.54",
+        "play_rate": "2.9%"
+      }
+    ]
+  },
+  "荏妮": {
+    "recommended_builds": [
+      {
+        "items": [
+          "完美皮城海克斯护甲",
+          "石像鬼石板甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "2.41",
+        "place_change": "-2.42",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "完美失稳炼金罐",
+          "石像鬼石板甲",
+          "狂徒铠甲"
+        ],
+        "avg_place": "2.35",
+        "place_change": "-2.48",
+        "play_rate": "0.2%"
+      },
+      {
+        "items": [
+          "完美皮城海克斯护甲",
+          "棘刺背心",
+          "巨龙之爪"
+        ],
+        "avg_place": "1.70",
+        "place_change": "-3.13",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "失稳炼金罐 II",
+          "完美皮城海克斯护甲",
+          "石像鬼石板甲"
+        ],
+        "avg_place": "1.93",
+        "place_change": "-2.90",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "完美皮城海克斯护甲",
+          "巨龙之爪",
+          "狂徒铠甲"
+        ],
+        "avg_place": "2.12",
+        "place_change": "-2.71",
+        "play_rate": "0.1%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "完美皮城海克斯护甲",
+        "avg_place": "2.46",
+        "place_change": "-2.41",
+        "play_rate": "1.8%"
+      },
+      {
+        "name": "完美失稳炼金罐",
+        "avg_place": "2.49",
+        "place_change": "-2.38",
+        "play_rate": "1.7%"
+      },
+      {
+        "name": "救赎",
+        "avg_place": "4.30",
+        "place_change": "-0.58",
+        "play_rate": "8.9%"
+      },
+      {
+        "name": "皮城海克斯护甲 II",
+        "avg_place": "4.03",
+        "place_change": "-0.85",
+        "play_rate": "5.2%"
+      },
+      {
+        "name": "完美微光绽放",
+        "avg_place": "2.34",
+        "place_change": "-2.52",
+        "play_rate": "1.0%"
+      }
+    ]
+  },
+  "特朗德尔": {
+    "recommended_builds": [
+      {
+        "items": [
+          "饮血剑",
+          "泰坦的坚决",
+          "正义之手"
+        ],
+        "avg_place": "4.23",
+        "place_change": "-0.66",
+        "play_rate": "0.7%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "斯特拉克的挑战护手",
+          "泰坦的坚决"
+        ],
+        "avg_place": "4.75",
+        "place_change": "-0.14",
+        "play_rate": "0.9%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "水银",
+          "泰坦的坚决"
+        ],
+        "avg_place": "4.65",
+        "place_change": "-0.24",
+        "play_rate": "0.6%"
+      },
+      {
+        "items": [
+          "饮血剑",
+          "泰坦的坚决",
+          "泰坦的坚决"
+        ],
+        "avg_place": "4.22",
+        "place_change": "-0.67",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "石像鬼石板甲",
+          "巨人腰带",
+          "狂徒铠甲"
+        ],
+        "avg_place": "4.50",
+        "place_change": "-0.39",
+        "play_rate": "0.2%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "锁子甲",
+        "avg_place": "4.66",
+        "place_change": "-0.26",
+        "play_rate": "10.5%"
+      },
+      {
+        "name": "巨人腰带",
+        "avg_place": "4.71",
+        "place_change": "-0.20",
+        "play_rate": "10.9%"
+      },
+      {
+        "name": "负极斗篷",
+        "avg_place": "4.71",
+        "place_change": "-0.19",
+        "play_rate": "7.2%"
+      },
+      {
+        "name": "日炎斗篷",
+        "avg_place": "4.78",
+        "place_change": "-0.12",
+        "play_rate": "6.1%"
+      },
+      {
+        "name": "泰坦的坚决",
+        "avg_place": "4.69",
+        "place_change": "-0.21",
+        "play_rate": "4.3%"
+      }
+    ]
+  },
+  "史密奇": {
+    "recommended_builds": [
+      {
+        "items": [
+          "完美行刑官链锯刃",
+          "饮血剑",
+          "泰坦的坚决"
+        ],
+        "avg_place": "2.90",
+        "place_change": "-2.14",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "完美行刑官链锯刃",
+          "饮血剑",
+          "夜之锋刃"
+        ],
+        "avg_place": "1.83",
+        "place_change": "-3.20",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "完美裂肉者",
+          "饮血剑",
+          "泰坦的坚决"
+        ],
+        "avg_place": "3.35",
+        "place_change": "-1.68",
+        "play_rate": "0.1%"
+      },
+      {
+        "items": [
+          "完美行刑官链锯刃",
+          "夜之锋刃",
+          "正义之手"
+        ],
+        "avg_place": "2.03",
+        "place_change": "-3.00",
+        "play_rate": "0.0%"
+      },
+      {
+        "items": [
+          "完美行刑官链锯刃",
+          "饮血剑",
+          "正义之手"
+        ],
+        "avg_place": "2.60",
+        "place_change": "-2.43",
+        "play_rate": "0.0%"
+      }
+    ],
+    "top_items": [
+      {
+        "name": "窃贼手套",
+        "avg_place": "4.32",
+        "place_change": "-0.75",
+        "play_rate": "6.3%"
+      },
+      {
+        "name": "回收护手",
+        "avg_place": "3.07",
+        "place_change": "-1.99",
+        "play_rate": "1.7%"
+      },
+      {
+        "name": "完美行刑官链锯刃",
+        "avg_place": "2.92",
+        "place_change": "-2.12",
+        "play_rate": "0.8%"
+      },
+      {
+        "name": "回收装置",
+        "avg_place": "2.81",
+        "place_change": "-2.23",
+        "play_rate": "0.6%"
+      },
+      {
+        "name": "夜之锋刃",
+        "avg_place": "5.00",
+        "place_change": "-0.03",
+        "play_rate": "8.2%"
+      }
+    ]
+  }
+}

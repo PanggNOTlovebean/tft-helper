@@ -161,7 +161,7 @@ class AugumentTask(BaseTask):
 
     def post_process_ocr_result(self, ocr_result):
         """后处理OCR结果，清理不必要的字符,增加额外后缀"""
-        aug_name = ''.join(char for char in ocr_result if '\u4e00' <= char <= '\u9fff' or char in '+CD')
+        aug_name = ''.join(char for char in ocr_result if ('\u4e00' <= char <= '\u9fff' or char in '+CD') and char != '川')
         if aug_name not in self.augment_rank_map:
             aug_name = self.append_level_suffix(aug_name)
         return aug_name

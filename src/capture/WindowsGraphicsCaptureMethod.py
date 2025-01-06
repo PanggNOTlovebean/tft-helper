@@ -235,7 +235,9 @@ class WindowsGraphicsCaptureMethod(BaseWindowsCaptureMethod):
             else:
                 if ENABLE_SAVE_SCREENSHOT:
                     file_name = f"{int(frame_time - APP_START_TIME):010}.png"
-                    cv2.imwrite(SCREENSHOT_BASE_DIR / file_name, frame)
+                    file_path = SCREENSHOT_BASE_DIR / file_name
+                    if not file_path.exists():  # 检查文件是否已存在
+                        cv2.imwrite(str(file_path), frame)
                 return frame  # 返回有效的帧
 
     def reset_framepool(self, size, reset_device=False):

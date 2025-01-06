@@ -9,7 +9,7 @@ LOL_PROCESS_NAME = 'League of Legends (TM) Client'
 DEBUG_MODE = True
 
 # 是否开启回放
-REPLAY_MODE = True
+REPLAY_MODE = False
 # REPLAY_BASE_TIME = '2024-12-22 22-31-21'
 REPLAY_BASE_TIME = '2025-01-02 16-36-45'
 # 回放时间偏移量 单位秒
