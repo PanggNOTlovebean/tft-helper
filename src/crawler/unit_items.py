@@ -31,89 +31,100 @@ def get_items_data():
             url = unit['href']
             log.info(f"开始获取 {unit_name} 的装备数据...")
             
-            try:
-                driver.get(url)
-                sleep(2)  # 等待页面加载
-                log.info(f"正在访问页面: {url}")
-                
-                # 切换为中文
-                lang_btn = driver.find_element(By.CLASS_NAME, "LanguageLabel")
-                lang_btn.click()
-                sleep(1)
-                lang_btn_list = driver.find_elements(By.CLASS_NAME, "LanguageLabel")
-                zh_btn = lang_btn_list[-4]
-                zh_btn.click()
-                sleep(2)
-                log.info("已切换为中文界面")
-                
-                unit_data = {
-                    'recommended_builds': [],
-                    'top_items': []
-                }
-                
-                # 获取推荐装备组合
-                build_rows = driver.find_elements(By.CLASS_NAME, "ItemHolderRow")
-                log.info(f"开始获取 {unit_name} 的推荐装备组合...")
-                
-                for idx, row in enumerate(build_rows[:5], 1):  # 只取前5个组合
-                    build = {
-                        'items': [],
-                        'avg_place': '',
-                        'place_change': '',
-                        'play_rate': ''
+            # 添加重试机制
+            max_retries = 3
+            retry_count = 0
+            
+            while retry_count < max_retries:
+                try:
+                    driver.get(url)
+                    sleep(2)
+                    log.info(f"正在访问页面: {url}")
+                    
+                    # 切换为中文
+                    lang_btn = driver.find_element(By.CLASS_NAME, "LanguageLabel")
+                    lang_btn.click()
+                    sleep(1)
+                    lang_btn_list = driver.find_elements(By.CLASS_NAME, "LanguageLabel")
+                    zh_btn = lang_btn_list[-4]
+                    zh_btn.click()
+                    sleep(2)
+                    log.info("已切换为中文界面")
+                    
+                    unit_data = {
+                        'recommended_builds': [],
+                        'top_items': []
                     }
                     
-                    # 获取装备名称
-                    items = row.find_elements(By.CLASS_NAME, "TableItemImg")
-                    for item in items:
-                        build['items'].append(item.get_attribute('alt'))
+                    # 获取推荐装备组合
+                    build_rows = driver.find_elements(By.CLASS_NAME, "ItemHolderRow")
+                    log.info(f"开始获取 {unit_name} 的推荐装备组合...")
                     
-                    # 获取统计数据
-                    stats = row.find_elements(By.CLASS_NAME, "ItemHolderStatNum")
-                    if len(stats) >= 2:
-                        build['avg_place'] = stats[0].text
-                        build['place_change'] = stats[1].text
+                    for idx, row in enumerate(build_rows[:5], 1):  # 只取前5个组合
+                        build = {
+                            'items': [],
+                            'avg_place': '',
+                            'place_change': '',
+                            'play_rate': ''
+                        }
+                        
+                        # 获取装备名称
+                        items = row.find_elements(By.CLASS_NAME, "TableItemImg")
+                        for item in items:
+                            build['items'].append(item.get_attribute('alt'))
+                        
+                        # 获取统计数据
+                        stats = row.find_elements(By.CLASS_NAME, "ItemHolderStatNum")
+                        if len(stats) >= 2:
+                            build['avg_place'] = stats[0].text
+                            build['place_change'] = stats[1].text
+                        
+                        play_rate = row.find_element(By.CLASS_NAME, "ItemHolderStatNumPercent")
+                        build['play_rate'] = play_rate.text
+                        
+                        unit_data['recommended_builds'].append(build)
+                        log.info(f"已获取第 {idx} 个装备组合: {', '.join(build['items'])}")
+                        log.info(f"平均名次: {build['avg_place']}, 名次变化: {build['place_change']}, 使用率: {build['play_rate']}")
                     
-                    play_rate = row.find_element(By.CLASS_NAME, "ItemHolderStatNumPercent")
-                    build['play_rate'] = play_rate.text
+                    # 获取单件装备数据
+                    log.info(f"开始获取 {unit_name} 的单件装备数据...")
+                    top_items = driver.find_elements(By.CSS_SELECTOR, ".UnitDetailStatsItem .ItemHolderRow")
                     
-                    unit_data['recommended_builds'].append(build)
-                    log.info(f"已获取第 {idx} 个装备组合: {', '.join(build['items'])}")
-                    log.info(f"平均名次: {build['avg_place']}, 名次变化: {build['place_change']}, 使用率: {build['play_rate']}")
-                
-                # 获取单件装备数据
-                log.info(f"开始获取 {unit_name} 的单件装备数据...")
-                top_items = driver.find_elements(By.CSS_SELECTOR, ".UnitDetailStatsItem .ItemHolderRow")
-                
-                for item_row in top_items:
-                    item = {
-                        'name': '',
-                        'avg_place': '',
-                        'place_change': '',
-                        'play_rate': ''
-                    }
+                    for item_row in top_items:
+                        item = {
+                            'name': '',
+                            'avg_place': '',
+                            'place_change': '',
+                            'play_rate': ''
+                        }
+                        
+                        img = item_row.find_element(By.CLASS_NAME, "ItemHolderImg")
+                        item['name'] = img.get_attribute('alt')
+                        
+                        stats = item_row.find_elements(By.CLASS_NAME, "ItemHolderStatNum")
+                        if len(stats) >= 2:
+                            item['avg_place'] = stats[0].text
+                            item['place_change'] = stats[1].text
+                        
+                        play_rate = item_row.find_element(By.CLASS_NAME, "ItemHolderStatNumPercent")
+                        item['play_rate'] = play_rate.text
+                        
+                        log.info(f"已获取装备: {item['name']}, 平均名次: {item['avg_place']}, 名次变化: {item['place_change']}, 使用率: {item['play_rate']}")
+                        
+                        unit_data['top_items'].append(item)
                     
-                    img = item_row.find_element(By.CLASS_NAME, "ItemHolderImg")
-                    item['name'] = img.get_attribute('alt')
+                    result[unit_name] = unit_data
+                    log.info(f"✅ {unit_name} 数据获取完成 - 共获取 {len(unit_data['recommended_builds'])} 个装备组合和 {len(unit_data['top_items'])} 个单件装备")
+                    break  # 成功获取数据后跳出重试循环
                     
-                    stats = item_row.find_elements(By.CLASS_NAME, "ItemHolderStatNum")
-                    if len(stats) >= 2:
-                        item['avg_place'] = stats[0].text
-                        item['place_change'] = stats[1].text
-                    
-                    play_rate = item_row.find_element(By.CLASS_NAME, "ItemHolderStatNumPercent")
-                    item['play_rate'] = play_rate.text
-                    
-                    log.info(f"已获取装备: {item['name']}, 平均名次: {item['avg_place']}, 名次变化: {item['place_change']}, 使用率: {item['play_rate']}")
-                    
-                    unit_data['top_items'].append(item)
-                
-                result[unit_name] = unit_data
-                log.info(f"✅ {unit_name} 数据获取完成 - 共获取 {len(unit_data['recommended_builds'])} 个装备组合和 {len(unit_data['top_items'])} 个单件装备")
-                
-            except Exception as e:
-                log.error(f"获取 {unit_name} 数据时发生错误: {str(e)}")
-                continue
+                except Exception as e:
+                    retry_count += 1
+                    if retry_count < max_retries:
+                        log.warning(f"获取 {unit_name} 数据时发生错误: {str(e)}, 正在进行第 {retry_count + 1} 次重试...")
+                        sleep(3)  # 重试前等待一段时间
+                    else:
+                        log.error(f"获取 {unit_name} 数据失败，已重试 {max_retries} 次: {str(e)}")
+                        continue
         
         # 保存数据
         with open('../../data/stat/unit_items.json', 'w', encoding='utf-8') as f:
