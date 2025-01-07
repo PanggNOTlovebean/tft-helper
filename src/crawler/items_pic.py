@@ -37,7 +37,7 @@ def download_items_pics():
         log.info("已切换为中文界面")
         
         # 创建图片保存目录
-        save_dir = "../../data/images/items"
+        save_dir = "../../data/items"
         os.makedirs(save_dir, exist_ok=True)
         
         # 获取表格中的装备信息

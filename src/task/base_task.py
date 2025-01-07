@@ -1,4 +1,5 @@
 from abc import ABC
+from typing import Optional
 
 import numpy as np
 from rapidocr_paddle import RapidOCR
@@ -16,8 +17,8 @@ from gui.overlay_window import BoxTextItem, HtmlItem, OverlayWindow, RankFlagIte
 
 
 class BaseTask(ABC):
-    name = ''
-    description = ''
+    name: str = ''
+    description: str = ''
     hwnd: HwndWindow = HwndWindow(LOL_PROCESS_NAME)
     capturer: BaseCaptureMethod = (
         WindowsGraphicsCaptureMethod(hwnd)
@@ -25,50 +26,53 @@ class BaseTask(ABC):
         else ReplayerCaptureMethod(hwnd)
     )
     ocr_line_model: RapidOCR = ocr
-    _overlay_window = None  # 添加类级别的静态变量
+    _overlay_window: Optional[OverlayWindow] = None
     def __init__(self, config: TaskConfig = TaskConfig()):
         self.config = config
         if BaseTask._overlay_window is None:
             BaseTask._overlay_window = OverlayWindow()
             BaseTask._overlay_window.show()
         self.overlay_window = BaseTask._overlay_window
-
     def run(self): ...
 
     def is_executable(self) -> bool:
-        return self.hwnd.is_open
+        return (self.hwnd is not None and self.hwnd.is_open) and self.is_enabled()
     
-    def ocr(self, position: RelatetiveBoxPosition, frame: np.ndarray = None, ocr_line = True) -> str:
+    def ocr(self, position: RelatetiveBoxPosition, frame: Optional[np.ndarray] = None, ocr_line: bool = True) -> str:
         if frame is None:
-            frame = self.capturer.do_get_frame()
+            frame = self.capturer.get_frame()
         if frame is None:
             raise NoFrameException('未获取到图像')
         cropped_frame = position.get_cropped_frame(frame)
         ocr_result = self.ocr_line(cropped_frame)
+        
         if DEBUG_MODE:
-            box_text_item = BoxTextItem(position=position, text=ocr_result, duration=2)
-            self.overlay_window.add_box_item(box_text_item)
+            self._show_debug_overlay(position, ocr_result)
+
         return ocr_result
 
     def ocr_line(self, frame: np.ndarray) -> str:
-        '''
-        识别单行文本
-        '''
-        ocr_result = self.ocr_line_model(frame)
         try:
-            parsed_result = ocr_result[0][0][1]
+            ocr_result = self.ocr_line_model(frame)
+            return ocr_result[0][0][1]
         except Exception as e:
-            log.warning('ocr 识别失败 返回空字符串')
+            log.warning(f'OCR 识别失败: {str(e)}')
             return ''
-        return parsed_result
-    
-    def find_image(self, template: np.ndarray, frame: np.ndarray, position: RelatetiveBoxPosition):
+            
+    def _show_debug_overlay(self, position: RelatetiveBoxPosition, text: str, duration: int = 2) -> None:
+        """显示调试信息的辅助方法"""
+        box_text_item = BoxTextItem(position=position, text=text, duration=duration)
+        self.overlay_window.add_box_item(box_text_item)
+
+    def find_image(self, template: np.ndarray, frame: np.ndarray, position: RelatetiveBoxPosition) -> bool:
         result = find_image(template, position.get_cropped_frame(frame))
+        
         if DEBUG_MODE:
             if result is not None:
-                self.overlay_window.add_box_item(BoxTextItem(position=position, text='找图成功', duration=2))
+                self._show_debug_overlay(position, '找图成功')
             else:
                 self.overlay_window.remove_box_item(position)
+                
         return result is not None
     
     def enable(self):

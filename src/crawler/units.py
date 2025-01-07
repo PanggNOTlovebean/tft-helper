@@ -65,7 +65,7 @@ def get_units_data():
         log.info(f"统计得到{len(result)}个英雄单位")
 
         # 保存数据
-        with open('../../data/stat/units.json', 'w', encoding='utf-8') as f:
+        with open('../../data/stat/unit_url.json', 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
             
         return result

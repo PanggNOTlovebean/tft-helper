@@ -11,6 +11,7 @@ from task.base_task import BaseTask
 import json
 
 from enum import Enum
+from time import sleep
 import numpy as np
 
 # 强化符文图标所在位置
@@ -83,7 +84,7 @@ class AugumentTask(BaseTask):
     def run(self):
         """主运行逻辑，获取帧并处理强化符文"""
         try:
-            frame = self.capturer.do_get_frame()
+            frame = self.capturer.get_frame()
             if not self.check_label_presence(frame):
                 return
 
@@ -93,8 +94,6 @@ class AugumentTask(BaseTask):
 
             self.process_augment_names()
 
-        except NoFrameException as e:
-            log.error(e)
         except Exception as e:
             log.exception(e)
 
@@ -174,10 +173,15 @@ class AugumentTask(BaseTask):
             AugmentLevel.SILVER: 'I'
         }
         suffix = level_suffix_map.get(self.level)
+        # 如果等于2 需要判断是否有3
+        if suffix == 'II' and aug_name + 'III' not in self.augment_rank_map:
+            suffix = 'I'
+
         if suffix:
             aug_name += suffix
             if aug_name not in self.augment_rank_map:
                 aug_name = aug_name[:-1]
+
         return aug_name
 
 

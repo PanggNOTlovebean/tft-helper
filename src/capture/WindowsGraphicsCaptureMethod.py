@@ -9,6 +9,7 @@ import numpy as np
 from typing_extensions import override
 from pathlib import Path
 from time import sleep
+import threading
 
 from __version__ import APP_START_TIME, ENABLE_SAVE_SCREENSHOT, SCREENSHOT_BASE_DIR
 from capture.hwnd_window import HwndWindow
@@ -25,7 +26,7 @@ from loguru import logger as log
 class WindowsGraphicsCaptureMethod(BaseWindowsCaptureMethod):
     name = "Windows Graphics Capture"
     description = "fast, most compatible, capped at 60fps"
-    
+
     def __init__(self, hwnd_window: HwndWindow):
         super().__init__(hwnd_window)
         self.last_frame = None
@@ -166,7 +167,7 @@ class WindowsGraphicsCaptureMethod(BaseWindowsCaptureMethod):
                     sleep(0.1)
                 return True
             except Exception as e:
-                log.exception(f'start_or_stop failed: {self.hwnd_window}')
+                log.exception(f'start_or_stop failed: {self.hwnd_window}', e)
                 return False
         elif not self.hwnd_window.exists and self.frame_pool is not None:
             self.close()
@@ -212,11 +213,11 @@ class WindowsGraphicsCaptureMethod(BaseWindowsCaptureMethod):
         # 检查捕获是否可以开始或停止
         if self.start_or_stop():
             frame = self.last_frame  # 获取最后捕获的帧
-            frame_time = self.last_frame_time
-            self.last_frame = None  # 重置 last_frame 以便下次捕获
+            # self.last_frame = None  # 重置 last_frame 以便下次捕获
             if frame is None:  # 如果没有可用的帧
+                log.info('last frame is None')
                 cur_time = time.time()
-                if  cur_time - self.last_frame_time > 10:  # 检查是否超过 10 秒没有帧
+                if cur_time - self.last_frame_time > 10:  # 检查是否超过 10 秒没有帧
                     log.warning(f'no frame for 60 sec, try to restart')
                     self.close()  # 关闭捕获会话
                     self.last_frame_time = time.time()  # 更新最后帧时间
@@ -234,7 +235,7 @@ class WindowsGraphicsCaptureMethod(BaseWindowsCaptureMethod):
                 return None  # 返回 None，因延迟过高
             else:
                 if ENABLE_SAVE_SCREENSHOT:
-                    file_name = f"{int(frame_time - APP_START_TIME):010}.png"
+                    file_name = f"{int(self.last_frame_time - APP_START_TIME):010}.png"
                     file_path = SCREENSHOT_BASE_DIR / file_name
                     if not file_path.exists():  # 检查文件是否已存在
                         cv2.imwrite(str(file_path), frame)

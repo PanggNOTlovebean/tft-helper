@@ -9,7 +9,7 @@ from common.logger import log
 
 def get_items_data():
     # 读取英雄数据
-    with open('../../data/stat/units.json', 'r', encoding='utf-8') as f:
+    with open('../../data/stat/unit_url.json', 'r', encoding='utf-8') as f:
         units = json.load(f)
     
     chrome_options = webdriver.ChromeOptions()
@@ -116,7 +116,7 @@ def get_items_data():
                 continue
         
         # 保存数据
-        with open('../../data/stat/items.json', 'w', encoding='utf-8') as f:
+        with open('../../data/stat/unit_items.json', 'w', encoding='utf-8') as f:
             json.dump(result, f, ensure_ascii=False, indent=2)
             
     except Exception as e:

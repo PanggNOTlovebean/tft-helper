@@ -28,7 +28,7 @@ class GameStageTask(BaseTask):
         while True:
             try:
                 # 阶段位置
-                frame = self.capturer.do_get_frame()
+                frame = self.capturer.get_frame()
                 position = RelatetiveBoxPosition(0.38, 0, 0.45, 0.04)
                 ocr_result = self.ocr(position, frame)
                 # 后处理 只接受数字和字符
@@ -44,10 +44,8 @@ class GameStageTask(BaseTask):
                 # if ocr_result.isdigit() and int(ocr_result) > 2:
                 #     sleep_time = int(ocr_result) - 1
                 #     log.info(f'更新睡眠时间 {sleep_time}')
-            except NoFrameException as e:
-                log.error(e)
             except Exception as e:
-                log.exception(e)
+                log.error(e)
             time.sleep(sleep_time)
             sleep_time = 1
 
