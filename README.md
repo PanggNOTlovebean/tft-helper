@@ -16,5 +16,14 @@
 - [x] 游戏阶段识别task
 - [x] ocr显示debug信息
 - [x] 符文强化task + 强度提示
-- [ ] 英雄task + 装备推荐
+- [x] 英雄task + 装备推荐
 - [ ] 神器task + 强度提示
+
+## 符文强化效果展示
+![img.png](data/doc/augment_preview.png)
+
+## 装备推荐效果展示
+![img.png](data/doc/items_preview.png)
+
+## 神器/光明装推荐效果展示（TODO）
+![super_items_preview.png](data%2Fdoc%2Fsuper_items_preview.png)
